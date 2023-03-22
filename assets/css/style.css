@@ -1,0 +1,19 @@
+:root {
+    --bgr-clr: #444;
+    --btn-clr: #333;
+    --txt-clr: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bgr-clr);
+}
+
+html {
+    background: url(/assets/images/wp8944713-4k-universal-studios-wallpapers.jpg) no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+    color: var(--txt-clr);
+}
