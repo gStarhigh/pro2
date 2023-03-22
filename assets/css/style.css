@@ -17,3 +17,11 @@ html {
     min-height: 100%;
     color: var(--txt-clr);
 }
+
+.crs-point {
+    cursor: pointer;
+}
+
+.dsp-block {
+    display: block;
+}
