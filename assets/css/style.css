@@ -18,10 +18,40 @@ html {
     color: var(--txt-clr);
 }
 
+.trans {
+    transform: translate(-50%, -50%);
+}
+
 .crs-point {
     cursor: pointer;
 }
 
 .dsp-block {
     display: block;
+}
+
+.welcome-game-area {
+    background-color: var(--bgr-clr);
+    opacity: 0.9;
+    max-width: 900px;
+    min-height: 550px;
+    border-radius: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.menu-bar {
+    width: 900px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.home-icon,
+.hamburger {
+    font-size: 180%;
+    padding: 10px 20px;
+    color: var(--txt-clr);
 }
