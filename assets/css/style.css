@@ -15,7 +15,7 @@
 }
 
 html {
-    background: url(/assets/images/wp8944713-4k-universal-studios-wallpapers.jpg) no-repeat center center;
+    background: url(assets/images/wp8944713-4k-universal-studios-wallpapers.jpg) no-repeat center center;
     background-size: cover;
     min-height: 100%;
     color: var(--txt-clr);
