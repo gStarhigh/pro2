@@ -30,6 +30,10 @@ html {
     display: block;
 }
 
+.txt-align {
+    text-align: center;
+}
+
 .welcome-game-area {
     background-color: var(--bgr-clr);
     opacity: 0.9;
@@ -54,4 +58,34 @@ html {
     font-size: 180%;
     padding: 10px 20px;
     color: var(--txt-clr);
+}
+
+.welcome-headline {
+    margin-top: 20px;
+}
+
+.start-info-text {
+    margin-top: 60px;
+}
+
+.name-section {
+    margin-top: 80px;
+}
+
+.username {
+    height: 30px;
+    border-radius: 5px;
+    border-style: none;
+    width: 50%;
+}
+
+.start-button {
+    margin-top: 100px;
+    height: 80px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: blue;
+    color: var(--txt-clr);
+    font-size: 18px;
+    font-weight: 500;
 }
