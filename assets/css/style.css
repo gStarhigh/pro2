@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 :root {
     --bgr-clr: #444;
     --btn-clr: #333;
@@ -16,6 +18,7 @@ html {
     background-size: cover;
     min-height: 100%;
     color: var(--txt-clr);
+    font-family: "Roboto", sans-serif;
 }
 
 .trans {
@@ -88,4 +91,5 @@ html {
     color: var(--txt-clr);
     font-size: 18px;
     font-weight: 500;
+    font-family: "Roboto";
 }
