@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+/*Root and body elements*/
 :root {
     --bgr-clr: #444;
     --btn-clr: #333;
@@ -21,6 +22,7 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+/*Multiple elements classes*/
 .trans {
     transform: translate(-50%, -50%);
 }
@@ -37,6 +39,7 @@ html {
     text-align: center;
 }
 
+/*Welcome to the game page*/
 .welcome-game-area {
     background-color: var(--bgr-clr);
     opacity: 0.9;
@@ -49,6 +52,7 @@ html {
     left: 50%;
 }
 
+/*Menu*/
 .menu-bar {
     width: 900px;
     display: flex;
@@ -63,6 +67,7 @@ html {
     color: var(--txt-clr);
 }
 
+/*Welcome text*/
 .welcome-headline {
     margin-top: 20px;
 }
@@ -71,6 +76,7 @@ html {
     margin-top: 60px;
 }
 
+/*Username box*/
 .name-section {
     margin-top: 80px;
 }
@@ -80,14 +86,16 @@ html {
     border-radius: 5px;
     border-style: none;
     width: 50%;
+    background-color: var(--txt-clr);
 }
 
+/*Start button*/
 .start-button {
     margin-top: 100px;
     height: 80px;
     width: 180px;
     border-radius: 10px;
-    background-color: blue;
+    background-color: rgba(0, 255, 128, 0.521);
     color: var(--txt-clr);
     font-size: 18px;
     font-weight: 500;
