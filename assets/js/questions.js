@@ -39,3 +39,46 @@ const easyQuestions = [{
         answer: "b",
     },
 ];
+
+const mediumQuestions = [{
+
+        question: "How many books did J.K Rowling publish in the Harry Potter universe?",
+        a: "5",
+        b: "6",
+        c: "7",
+        d: "8",
+        answer: "c",
+    },
+    {
+        question: "What is the name of He Who Must Not Be Named's snake?",
+        a: "Salazar",
+        b: "Herpo",
+        c: "Nagini",
+        d: "Morfin",
+        answer: "c",
+    },
+    {
+        question: "What are Hermione's parents muggle proffession?",
+        a: "Dentists",
+        b: "Doctors",
+        c: "Physiotherapists",
+        d: "Hair dressers",
+        answer: "a",
+    },
+    {
+        question: "What does Lucius Malfoy slip Ginny Weasley in the second film?",
+        a: "A letter",
+        b: "A napkin",
+        c: "A diary",
+        d: "A wand",
+        answer: "c",
+    },
+    {
+        question: "What animal does Harry help set free in the third movie or book?",
+        a: "A Grindilow",
+        b: "A Dragon",
+        c: "A Spider",
+        d: "A Hippogriff",
+        answer: "d",
+    },
+]
