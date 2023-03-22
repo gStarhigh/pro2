@@ -41,7 +41,6 @@ const easyQuestions = [{
 ];
 
 const mediumQuestions = [{
-
         question: "How many books did J.K Rowling publish in the Harry Potter universe?",
         a: "5",
         b: "6",
@@ -82,3 +81,45 @@ const mediumQuestions = [{
         answer: "d",
     },
 ]
+
+const hardQuestions = [{
+        question: "What spell is used the most in the Harry potter universe?",
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        answer: "",
+    },
+    {
+        question: "What is the name of Ron's oldest brother?",
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        answer: "",
+    },
+    {
+        question: "What is the name of Harry's godfather?",
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        answer: "",
+    },
+    {
+        question: "What type of animagus is Professor McGonagall?",
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        answer: "",
+    },
+    {
+        question: "In what city is St Mungos Hospital for Maladies and Injuries?",
+        a: "",
+        b: "",
+        c: "",
+        d: "",
+        answer: "",
+    },
+];
