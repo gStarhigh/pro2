@@ -171,3 +171,15 @@ html {
 .next-question button:hover {
     font-size: 400%;
 }
+
+.time-left {
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 47%;
+    font-size: 150%;
+}
+
+.time-left p {
+    margin-left: 10px;
+}
