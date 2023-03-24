@@ -10,10 +10,11 @@ const rulesSection = document.getElementsById("game-rules-section");
 const easyButton = document.getElementById("easy-btn");
 const mediumButton = document.getElementById("medium-btn");
 const hardButton = document.getElementById("hard-btn");
+const nextQuestionButton = document.getElementById("next-question");
 
 
 
 
 
-
+// Focus on the username box when the page is loaded
 document.getElementById("username").focus();
