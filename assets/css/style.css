@@ -194,3 +194,28 @@ html {
 .score-amount {
     padding-left: 20px;
 }
+
+.finished-headline {
+    padding: 20px;
+}
+
+.finished-headline h2,
+h3 {
+    padding-top: 40px;
+}
+
+.play-again {
+    display: grid;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+.play-again-button {
+    margin: 10px 60px;
+    height: 80px;
+    width: 220px;
+    background-color: #044cd0;
+    border-radius: 10px;
+    color: var(--txt-clr);
+}
