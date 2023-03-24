@@ -183,3 +183,14 @@ html {
 .time-left p {
     margin-left: 10px;
 }
+
+.questions-score {
+    display: flex;
+    position: absolute;
+    top: 91%;
+    right: 5%;
+}
+
+.score-amount {
+    padding-left: 20px;
+}
