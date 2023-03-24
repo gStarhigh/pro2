@@ -13,5 +13,4 @@ const rulesSection = document.getElementsByClassName("game-rules-section");
 
 
 
-
 document.getElementById("username").focus();

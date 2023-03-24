@@ -40,7 +40,8 @@ html {
 }
 
 /*Welcome to the game page*/
-.welcome-game-area {
+.welcome-game-area,
+.difficulty-game-area {
     background-color: var(--bgr-clr);
     opacity: 0.9;
     max-width: 900px;
@@ -100,4 +101,22 @@ html {
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto";
+}
+
+/*Difficulty buttons*/
+
+.difficulty-buttons {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.diff-btns {
+    margin: 10px;
+    height: 70px;
+    width: 140px;
+    border-radius: 10px;
+    border-style: none;
 }
