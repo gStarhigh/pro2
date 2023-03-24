@@ -122,3 +122,24 @@ html {
     background-color: var(--btn-clr);
     color: var(--txt-clr);
 }
+
+
+/*Questions section*/
+
+.alternative-box {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+}
+
+.alternatives {
+    margin: 10px 60px;
+    height: 70px;
+    width: 30vw;
+    background-color: var(--btn-clr);
+    border-radius: 10px;
+    color: white;
+}
