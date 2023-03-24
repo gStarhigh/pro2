@@ -72,7 +72,49 @@
     </section>
 
     <!--Quiz section-->
-    <section class="questions-game-area game hide trans" id="questions-game-area"></section>
+    <section class="questions-game-area game hide trans" id="questions-game-area">
+        <div class="menu-bar">
+            <a href="index.html">
+                <div class="home-icon dsp-block crs-point">
+                    <i class="fa-solid fa-house">
+                    </i>
+                </div>
+            </a>
+            <div class="hamburger dsp-block crs-point">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="question" id="question-text">Question</h2>
+        </div>
+
+        <div class="alternative-box trans" id="alternatives-box">
+            <button class="alternatives crs-point" id="alternative-1"></button>
+            <button class="alternatives crs-point" id="alternative-2"></button>
+            <button class="alternatives crs-point" id="alternative-3"></button>
+            <button class="alternatives crs-point" id="alternative-4"></button>
+        </div>
+        <div class="next-question">
+            <button class="crs-point" aria-label="Next Question" id="next-question">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+        </div>
+
+        <div class="time-left" id="time-left">
+            <i class="fa-regular fa-hourglass"></i>
+            <p class="actual-time-left"> <span>0</span> s</p>
+        </div>
+        <div class="questions-score" id="questions-score">
+            <p class="questions-answered">
+                <i class="fa-solid fa-question"></i>
+                <span id="questions-answered">1</span>/5
+            </p>
+            <p class="score-amount">Right answers:<span id="correct-score-amount">0</span></p>
+            <p class="score-amount">Wrong answers:<span id="wrong-score-amount">0</span></p>
+        </div>
+
+    </section>
 
     <!--Finished game section-->
     <section class="finished-game-area game hide trans" id="finished-game-area"></section>
