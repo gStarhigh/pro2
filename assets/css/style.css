@@ -39,6 +39,9 @@ html {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
 
 /*Welcome to the game page*/
 .game {
