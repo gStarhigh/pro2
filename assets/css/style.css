@@ -39,6 +39,15 @@ html {
     text-align: center;
 }
 
+/*Hide all elements on page load except the welcome game area*/
+.welcome-game-area {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 /*Welcome to the game page*/
 .game {
     background-color: var(--bgr-clr);
