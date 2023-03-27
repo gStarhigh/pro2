@@ -1,5 +1,4 @@
-// Variabels
-
+// Variables
 const startBtn = document.getElementById("start-btn");
 const usernameForm = document.getElementById("username-form");
 const usernameInput = document.getElementById("username");
@@ -17,10 +16,8 @@ const toDiffbutton = document.getElementById("to-diff-button");
 
 
 
-
 // Focus on the username box when the page is loaded
 document.getElementById("username").focus();
-
 
 // Adds the hide class to all sections except the welcome section
 difficultySection.classList.add("hide");
@@ -28,9 +25,8 @@ questionsSection.classList.add("hide");
 finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
 
-//Removes the hide class from the welcome section
+// Removes the hide class from the welcome section
 welcomeSection.classList.remove("hide");
-
 
 /**
  * Listens after a click from the user on the start button, checks so the username is not empty,
@@ -61,10 +57,23 @@ usernameForm.addEventListener("submit", function (event) {
  * Listens for a click on the to diff button and then removes the hide element on the difficulty
  * section and adds it to the rules section
  */
-
 toDiffbutton.addEventListener("click", function (event) {
     event.preventDefault();
 
     difficultySection.classList.remove("hide");
     rulesSection.classList.add("hide");
 });
+
+
+
+// Event listeners for the difficulties
+easyButton.addEventListener("click", runGame);
+mediumButton.addEventListener("click", runGame);
+hardButton.addEventListener("click", runGame);
+
+function runGame(event) {
+    let difficulty = event.target.value;
+
+    difficultySection.classList.add("hide");
+    questionsSection.classList.remove("hide");
+}
