@@ -164,20 +164,15 @@ html {
 
 .next-question {
     position: absolute;
-    top: 35%;
-    left: 47%;
+    top: 28%;
+    left: 90%;
+    background-color: black;
 }
 
 .next-question button {
     font-size: 300%;
-    width: 60px;
-    height: 60px;
     border: none;
     color: var(--txt-clr);
-}
-
-.next-question button:hover {
-    font-size: 400%;
 }
 
 .time-left {
