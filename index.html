@@ -86,14 +86,14 @@
         </div>
 
         <div>
-            <h2 class="question txt-align" id="question-text"></h2>
+            <h2 class="question txt-align" id="question-text">Question</h2>
         </div>
 
         <div class="alternative-box trans" id="alternatives-box">
-            <button class="alternatives crs-point" id="alternative-1"></button>
-            <button class="alternatives crs-point" id="alternative-2"></button>
-            <button class="alternatives crs-point" id="alternative-3"></button>
-            <button class="alternatives crs-point" id="alternative-4"></button>
+            <button class="alternatives crs-point" id="alternative-1" value="a">Answer1</button>
+            <button class="alternatives crs-point" id="alternative-2" value="b">Answer2</button>
+            <button class="alternatives crs-point" id="alternative-3" value="c">Answer3</button>
+            <button class="alternatives crs-point" id="alternative-4" value="d">Answer4</button>
         </div>
         <div class="next-question">
             <button class="crs-point" aria-label="Next Question" id="next-question">
@@ -129,10 +129,8 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-        <div class="finished-headline txt-align">
-            <h1>Congratulations, you finished the Harry Potter game!</h1>
-            <h2>You got <span>#</span> questions correct on <span>Difficulty</span> <span>Name</span>!
-            </h2>
+        <div class="txt-align">
+            <h1 id="finished-headline"></h1>
             <h3>Do you want to play again?</h3>
         </div>
         <div class="play-again trans">

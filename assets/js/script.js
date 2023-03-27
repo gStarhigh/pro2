@@ -23,6 +23,11 @@ let answeredWrong = 0;
 let answerCliced = false;
 let currentQuestion = 0;
 let questionsLength = 5;
+let shuffledQuestions = 0;
+let currentQuestionSet = {};
+let gameLength = 5;
+let answerClicked = false;
+let determineColor = "unanswered";
 
 
 
@@ -83,10 +88,46 @@ easyButton.addEventListener("click", runGame);
 mediumButton.addEventListener("click", runGame);
 hardButton.addEventListener("click", runGame);
 
+// Game
+
 function runGame(event) {
     let difficulty = event.target.value;
 
-
+    if (difficulty === "easy") {
+        shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        gamerDifficulty = "easy";
+        easyButton.innerText = "Testing";
+    } else if (difficulty === "medium") {
+        shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        gamerDifficulty = "easy";
+        mediumButton.innerText = "Testing";
+    } else if (difficulty === "hard") {
+        shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
+        currentQuestionSet = shuffledQuestions;
+        gamerDifficulty = "hard";
+        hardButton.innerText = "Testing";
+    }
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
-};
+
+    // Calls makeQuestions function
+    makeQuestions();
+}
+
+function makeQuestions() {
+    if (currentQuestion >= gameLength) {
+        questionsSection.classList.add("hide");
+        finishedSection.classList.remove("hide");
+        let gamer = usernameInput.value;
+        document.getElementById("finished-headline").innerText = `${gamer} Du fick X rätt av 5 möjliga på svårighetsgrad ${gamerDifficulty}.`;
+    } else {
+        questionText.innerHTML = currentQuestionSet[currentQuestion].question;
+        answer1.innerHTML = currentQuestionSet[currentQuestion].a;
+        answer2.innerHTML = currentQuestionSet[currentQuestion].b;
+        answer3.innerHTML = currentQuestionSet[currentQuestion].c;
+        answer4.innerHTML = currentQuestionSet[currentQuestion].d;
+        currentQuestion++;
+    }
+}
