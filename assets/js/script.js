@@ -23,8 +23,6 @@ let currentQuestionIndex;
 let shuffledQuestions;
 
 
-
-
 // Focus on the username box when the page is loaded
 document.getElementById("username").focus();
 
