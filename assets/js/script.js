@@ -78,15 +78,12 @@ toDiffbutton.addEventListener("click", function (event) {
 // Event listeners for the difficulties
 easyButton.addEventListener("click", function () {
     runGame("easy");
-    console.log("clicked easy button");
 });
 mediumButton.addEventListener("click", function () {
     runGame("medium");
-    console.log("clicked medium button");
 });
 hardButton.addEventListener("click", function () {
     runGame("hard");
-    console.log("clicked hard button");
 });
 
 // Next question button event listener
@@ -102,15 +99,12 @@ function runGame(difficulty) {
     if (difficulty === "easy") {
         shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
         currentQuestionIndex = 0;
-        console.log("easy game");
     } else if (difficulty === "medium") {
         shuffledQuestions = mediumQuestions.sort(() => Math.random() - .5);
         currentQuestionIndex = 0;
-        console.log("medium game");
     } else if (difficulty === "hard") {
         shuffledQuestions = hardQuestions.sort(() => Math.random() - .5);
         currentQuestionIndex = 0;
-        console.log("Hard game");
     }
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
@@ -122,7 +116,6 @@ function runGame(difficulty) {
 
 function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
-    console.log("shuffled the questions");
 };
 
 function showQuestion(questions) {
@@ -131,7 +124,6 @@ function showQuestion(questions) {
     answer2.innerHTML = questions.b;
     answer3.innerHTML = questions.c;
     answer4.innerHTML = questions.d;
-    console.log("provided the correct Q & A");
 };
 
 function selectAnswer() {
