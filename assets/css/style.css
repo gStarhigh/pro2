@@ -278,8 +278,3 @@ h3 {
 #to-diff-button:hover {
     font-size: 170%;
 }
-
-#chosen-difficulty {
-    color: var(--txt-clr);
-    font-size: 300%;
-}
