@@ -12,6 +12,7 @@ const easyButton = document.getElementById("easy-btn");
 const mediumButton = document.getElementById("medium-btn");
 const hardButton = document.getElementById("hard-btn");
 const nextQuestionButton = document.getElementById("next-question");
+const toDiffbutton = document.getElementById("to-diff-button");
 
 
 
@@ -48,10 +49,22 @@ startBtn.addEventListener("click", function (event) {
 
     // If the username is not empty, remove the hide class from the difficulty section
     welcomeSection.classList.add("hide");
-    difficultySection.classList.remove("hide");
+    rulesSection.classList.remove("hide");
 });
 
 // Listens for a submit event on the username form, but does not perform any action
 usernameForm.addEventListener("submit", function (event) {
     event.preventDefault();
+});
+
+/**
+ * Listens for a click on the to diff button and then removes the hide element on the difficulty
+ * section and adds it to the rules section
+ */
+
+toDiffbutton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    difficultySection.classList.remove("hide");
+    rulesSection.classList.add("hide");
 });

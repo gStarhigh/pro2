@@ -250,3 +250,19 @@ h3 {
 .rules-list li {
     padding-top: 10px;
 }
+
+#to-diff-button {
+    margin-top: 50px;
+    height: 80px;
+    background-color: rgba(0, 255, 128, 0.521);
+    color: var(--txt-clr);
+    font-size: 150%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#to-diff-button:hover {
+    font-size: 170%;
+}
