@@ -3,8 +3,9 @@
 /*Root and body elements*/
 :root {
     --bgr-clr: #444;
-    --btn-clr: #333;
+    --btn-clr: #eeeeee;
     --txt-clr: whitesmoke;
+    --txt-btn-clr: #333;
 }
 
 * {
@@ -101,8 +102,8 @@ html {
     height: 80px;
     width: 180px;
     border-radius: 10px;
-    background-color: rgba(0, 255, 128, 0.521);
-    color: var(--txt-clr);
+    background-color: var(--btn-clr);
+    color: var(--txt-btn-clr);
     font-size: 18px;
     font-weight: 500;
     font-family: "Roboto";
@@ -126,7 +127,7 @@ html {
     border-radius: 10px;
     border-style: none;
     background-color: var(--btn-clr);
-    color: var(--txt-clr);
+    color: var(--txt-btn-clr);
 }
 
 
@@ -146,9 +147,10 @@ html {
     margin: 10px 40px;
     height: 80px;
     width: 350px;
-    background-color: #044cd0;
+    background-color: #eeeeee;
     border-radius: 10px;
-    color: var(--txt-clr);
+    color: var(--bgr-clr);
+    font-weight: 700;
 }
 
 .alternatives:hover {
@@ -201,6 +203,16 @@ html {
     padding-left: 20px;
 }
 
+.wrong-answer {
+    background-color: red;
+    color: var(--txt-clr);
+}
+
+.correct-answer {
+    background-color: green;
+    color: black;
+}
+
 
 /*Finished game section*/
 
@@ -224,9 +236,9 @@ h3 {
     margin: 10px 60px;
     height: 80px;
     width: 220px;
-    background-color: #044cd0;
+    background-color: var(--btn-clr);
     border-radius: 10px;
-    color: var(--txt-clr);
+    color: var(--txt-btn-clr);
 }
 
 /*Game rules section*/
@@ -254,8 +266,8 @@ h3 {
 #to-diff-button {
     margin-top: 50px;
     height: 80px;
-    background-color: rgba(0, 255, 128, 0.521);
-    color: var(--txt-clr);
+    background-color: var(--btn-clr);
+    color: var(--txt-btn-clr);
     font-size: 150%;
     font-weight: 600;
     letter-spacing: 1px;
