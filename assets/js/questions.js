@@ -65,7 +65,7 @@ const mediumQuestions = [{
         answer: "a",
     },
     {
-        question: "What does Lucius Malfoy slip Ginny Weasley in the second film?",
+        question: "What does Lucius Malfoy slip Ginny Weasley in the second movie?",
         a: "A letter",
         b: "A napkin",
         c: "A diary",
@@ -73,14 +73,14 @@ const mediumQuestions = [{
         answer: "c",
     },
     {
-        question: "What animal does Harry help set free in the third movie or book?",
+        question: "What animal does Harry help set free in the third movie?",
         a: "A Grindilow",
         b: "A Dragon",
         c: "A Spider",
         d: "A Hippogriff",
         answer: "d",
     },
-]
+];
 
 const hardQuestions = [{
         question: "What spell is used the most in the Harry potter universe?",

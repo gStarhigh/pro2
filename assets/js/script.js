@@ -17,17 +17,11 @@ const answer2 = document.getElementById("alternative-2");
 const answer3 = document.getElementById("alternative-3");
 const answer4 = document.getElementById("alternative-4");
 const questionText = document.getElementById("question-text");
-let gamerDifficulty;
-let answeredCorrect = 0;
-let answeredWrong = 0;
-let answerCliced = false;
-let currentQuestion = 0;
-let questionsLength = 5;
-let shuffledQuestions = 0;
-let currentQuestionSet = {};
-let gameLength = 5;
-let answerClicked = false;
-let determineColor = "unanswered";
+
+const alternativeButtons = document.getElementById("alternatives-box");
+let currentQuestionIndex;
+let shuffledQuestions;
+
 
 
 
@@ -50,9 +44,7 @@ welcomeSection.classList.remove("hide");
  */
 startBtn.addEventListener("click", function (event) {
     event.preventDefault();
-
     var username = usernameInput.value.trim();
-
     if (username === "") {
         alert("Gamer tag can't be empty, please choose a Gamer tag and try again!");
         return;
@@ -63,14 +55,16 @@ startBtn.addEventListener("click", function (event) {
     rulesSection.classList.remove("hide");
 });
 
+
 // Listens for a submit event on the username form, but does not perform any action
 usernameForm.addEventListener("submit", function (event) {
     event.preventDefault();
 });
 
+
 /**
- * Listens for a click on the to diff button and then removes the hide element on the difficulty
- * section and adds it to the rules section
+ * Listens for a click on the to difficulty section button and then removes the hide element
+ *  on the difficulty section and adds it to the rules section
  */
 toDiffbutton.addEventListener("click", function (event) {
     event.preventDefault();
@@ -84,50 +78,49 @@ toDiffbutton.addEventListener("click", function (event) {
 // Game Section
 
 // Event listeners for the difficulties
-easyButton.addEventListener("click", runGame);
-mediumButton.addEventListener("click", runGame);
-hardButton.addEventListener("click", runGame);
+easyButton.addEventListener("click", function () {
+    runGame("easy");
+    console.log("clicked easy button");
+});
+mediumButton.addEventListener("click", function () {
+    runGame("medium");
+    console.log("clicked medium button");
+});
+hardButton.addEventListener("click", function () {
+    runGame("hard");
+    console.log("clicked hard button");
+});
 
 // Game
 
-function runGame(event) {
-    let difficulty = event.target.value;
-
+function runGame(difficulty) {
     if (difficulty === "easy") {
-        shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
-        currentQuestionSet = shuffledQuestions;
-        gamerDifficulty = "easy";
-        easyButton.innerText = "Testing";
+        shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
+        currentQuestionIndex = 0;
+        console.log("easy game");
     } else if (difficulty === "medium") {
-        shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
-        currentQuestionSet = shuffledQuestions;
-        gamerDifficulty = "easy";
-        mediumButton.innerText = "Testing";
+        shuffledQuestions = mediumQuestions.sort(() => Math.random() - .5);
+        currentQuestionIndex = 0;
+        console.log("medium game");
     } else if (difficulty === "hard") {
-        shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
-        currentQuestionSet = shuffledQuestions;
-        gamerDifficulty = "hard";
-        hardButton.innerText = "Testing";
+        shuffledQuestions = hardQuestions.sort(() => Math.random() - .5);
+        currentQuestionIndex = 0;
     }
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
 
-    // Calls makeQuestions function
-    makeQuestions();
-}
+    // Calls setNextQuestions function
+    setNextQuestion();
+};
 
-function makeQuestions() {
-    if (currentQuestion >= gameLength) {
-        questionsSection.classList.add("hide");
-        finishedSection.classList.remove("hide");
-        let gamer = usernameInput.value;
-        document.getElementById("finished-headline").innerText = `${gamer} Du fick X rätt av 5 möjliga på svårighetsgrad ${gamerDifficulty}.`;
-    } else {
-        questionText.innerHTML = currentQuestionSet[currentQuestion].question;
-        answer1.innerHTML = currentQuestionSet[currentQuestion].a;
-        answer2.innerHTML = currentQuestionSet[currentQuestion].b;
-        answer3.innerHTML = currentQuestionSet[currentQuestion].c;
-        answer4.innerHTML = currentQuestionSet[currentQuestion].d;
-        currentQuestion++;
-    }
+function setNextQuestion() {
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+};
+
+function showQuestion(easyQuestions) {
+    questionText.innerHTML = easyQuestions.question;
+};
+
+function selectAnswer() {
+
 }
