@@ -90,10 +90,3 @@ function runGame(event) {
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
 };
-
-// If all questions have been answered, show the finished section and hide the questions.
-
-if (currentQuestion >= questionsLength) {
-    questionsSection.classList.add("hide");
-    finishedSection.classList.remove("hide");
-}
