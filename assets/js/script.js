@@ -12,7 +12,17 @@ const mediumButton = document.getElementById("medium-btn");
 const hardButton = document.getElementById("hard-btn");
 const nextQuestionButton = document.getElementById("next-question");
 const toDiffbutton = document.getElementById("to-diff-button");
-
+const answer1 = document.getElementById("alternative-1");
+const answer2 = document.getElementById("alternative-2");
+const answer3 = document.getElementById("alternative-3");
+const answer4 = document.getElementById("alternative-4");
+const questionText = document.getElementById("question-text");
+let gamerDifficulty;
+let answeredCorrect = 0;
+let answeredWrong = 0;
+let answerCliced = false;
+let currentQuestion = 0;
+let questionsLength = 5;
 
 
 
@@ -66,6 +76,8 @@ toDiffbutton.addEventListener("click", function (event) {
 
 
 
+// Game Section
+
 // Event listeners for the difficulties
 easyButton.addEventListener("click", runGame);
 mediumButton.addEventListener("click", runGame);
@@ -74,6 +86,14 @@ hardButton.addEventListener("click", runGame);
 function runGame(event) {
     let difficulty = event.target.value;
 
+
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
+};
+
+// If all questions have been answered, show the finished section and hide the questions.
+
+if (currentQuestion >= questionsLength) {
+    questionsSection.classList.add("hide");
+    finishedSection.classList.remove("hide");
 }
