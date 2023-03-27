@@ -117,8 +117,8 @@ function setNextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 };
 
-function showQuestion(easyQuestions) {
-    questionText.innerHTML = easyQuestions.question;
+function showQuestion(questions) {
+    questionText.innerHTML = questions.question;
 };
 
 function selectAnswer() {
