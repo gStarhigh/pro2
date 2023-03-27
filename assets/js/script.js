@@ -1,6 +1,7 @@
 // Variabels
 
 const startBtn = document.getElementById("start-btn");
+const usernameForm = document.getElementById("username-form");
 const usernameInput = document.getElementById("username");
 const welcomeSection = document.getElementById("welcome-game-area");
 const difficultySection = document.getElementById("difficulty-game-area");
@@ -31,12 +32,26 @@ welcomeSection.classList.remove("hide");
 
 
 /**
- * Listens after a click from the user on the start button, then removes the hide
- * element from the difficulty section and adds it to the welcome section
+ * Listens after a click from the user on the start button, checks so the username is not empty,
+ * then removes the hide element from the difficulty 
+ * section and adds it to the welcome section
  */
 startBtn.addEventListener("click", function (event) {
     event.preventDefault();
 
+    var username = usernameInput.value.trim();
+
+    if (username === "") {
+        alert("Gamer tag can't be empty, please choose a Gamer tag and try again!");
+        return;
+    }
+
+    // If the username is not empty, remove the hide class from the difficulty section
     welcomeSection.classList.add("hide");
     difficultySection.classList.remove("hide");
+});
+
+// Listens for a submit event on the username form, but does not perform any action
+usernameForm.addEventListener("submit", function (event) {
+    event.preventDefault();
 });
