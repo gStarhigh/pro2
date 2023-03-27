@@ -118,6 +118,10 @@ function setNextQuestion() {
 
 function showQuestion(questions) {
     questionText.innerHTML = questions.question;
+    answer1.innerHTML = questions.a;
+    answer2.innerHTML = questions.b;
+    answer3.innerHTML = questions.c;
+    answer4.innerHTML = questions.d;
 };
 
 function selectAnswer() {
