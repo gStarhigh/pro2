@@ -109,6 +109,7 @@ function runGame(difficulty) {
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
 
+
     // Calls setNextQuestions function
     setNextQuestion();
 };
