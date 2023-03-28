@@ -17,8 +17,9 @@ const answer2 = document.getElementById("alternative-2");
 const answer3 = document.getElementById("alternative-3");
 const answer4 = document.getElementById("alternative-4");
 const questionText = document.getElementById("question-text");
+const answerButtons = document.getElementsByClassName("alternatives");
 
-const alternativeButtons = document.getElementById("alternatives-box");
+
 let currentQuestionIndex;
 let shuffledQuestions;
 
@@ -122,9 +123,13 @@ function setNextQuestion() {
 function showQuestion(questions) {
     questionText.innerHTML = questions.question;
     answer1.innerHTML = questions.a;
+    answer1.setAttribute("data-answer", "a");
     answer2.innerHTML = questions.b;
+    answer2.setAttribute("data-answer", "b");
     answer3.innerHTML = questions.c;
+    answer3.setAttribute("data-answer", "c");
     answer4.innerHTML = questions.d;
+    answer4.setAttribute("data-answer", "d");
 };
 
 // Add a eventlistener for the answer buttons to see what value was clicked
@@ -143,17 +148,23 @@ answer4.addEventListener("click", function () {
 });
 
 function checkAnswer(answer) {
-    if (answer === shuffledQuestions[currentQuestionIndex].answer) {
+    const correctAnswer = shuffledQuestions[currentQuestionIndex].answer;
+    if (answer === correctAnswer) {
         // If the answer is correct
         console.log("correct answer");
         nextQuestionButton.classList.remove("hide");
+        document.querySelector(`[data-answer="${correctAnswer}"]`).classList.add("correct-answer");
     } else {
         // the answer is incorrect
         console.log("incorrect answer");
+        document.querySelector(`[data-answer="${answer}"]`).classList.add("wrong-answer");
     }
 };
 
 
 function resetQuiz() {
     nextQuestionButton.classList.add("hide");
-}
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("correct-answer", "wrong-answer");
+    }
+};
