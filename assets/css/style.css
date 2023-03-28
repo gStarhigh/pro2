@@ -219,13 +219,13 @@ html {
 
 /*Finished game section*/
 
-.finished-headline {
-    padding: 20px;
+.finished-info {
+    margin-top: 40px;
 }
 
-.finished-headline h2,
-h3 {
-    padding-top: 40px;
+.finished-headline h3,
+p {
+    margin-top: 40px;
 }
 
 .finished-score {
@@ -238,6 +238,7 @@ h3 {
     position: absolute;
     top: 70%;
     left: 50%;
+    background-color: transparent;
 }
 
 .play-again-button {
