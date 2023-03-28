@@ -18,6 +18,7 @@ const answer3 = document.getElementById("alternative-3");
 const answer4 = document.getElementById("alternative-4");
 const questionText = document.getElementById("question-text");
 const answerButtons = document.getElementsByClassName("alternatives");
+const playAgainButton = document.getElementById("play-again-button");
 
 
 let currentQuestionIndex;
@@ -99,6 +100,12 @@ nextQuestionButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
+// Play again button, when clicked, hides the finished section and displays the difficulties section.
+
+playAgainButton.addEventListener("click", function () {
+    finishedSection.classList.add("hide");
+    difficultySection.classList.remove("hide");
+})
 
 /**
  * Runs the game and shows the questions depending on the users 
