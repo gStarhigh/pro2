@@ -326,5 +326,11 @@ h3 {
 
     .time-left {
         top: 80%;
+        left: 10vw;
+    }
+
+    .questions-score {
+        flex-direction: column;
+        top: 88%;
     }
 }
