@@ -23,7 +23,11 @@ const answerButtons = document.getElementsByClassName("alternatives");
 let currentQuestionIndex;
 let shuffledQuestions;
 let isDisabled = false;
-
+//keeping track of the number of questions answered
+let questionsAnswered = 0;
+const totalEasyQuestions = 5;
+const totaltMediumQuestions = 5;
+const totaltHardQuestions = 5;
 
 // Focus on the username box when the page is loaded
 document.getElementById("username").focus();
@@ -91,7 +95,7 @@ hardButton.addEventListener("click", function () {
 
 // Next question button event listener
 nextQuestionButton.addEventListener("click", () => {
-    currentQuestionIndex++
+    currentQuestionIndex++;
     setNextQuestion();
 });
 
@@ -102,13 +106,13 @@ nextQuestionButton.addEventListener("click", () => {
  */
 function runGame(difficulty) {
     if (difficulty === "easy") {
-        shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
+        shuffledQuestions = easyQuestions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
     } else if (difficulty === "medium") {
-        shuffledQuestions = mediumQuestions.sort(() => Math.random() - .5);
+        shuffledQuestions = mediumQuestions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
     } else if (difficulty === "hard") {
-        shuffledQuestions = hardQuestions.sort(() => Math.random() - .5);
+        shuffledQuestions = hardQuestions.sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
     }
     difficultySection.classList.add("hide");
@@ -116,7 +120,7 @@ function runGame(difficulty) {
 
     // Calls setNextQuestions function
     setNextQuestion();
-};
+}
 
 
 function setNextQuestion() {
@@ -139,7 +143,7 @@ function showQuestion(questions) {
     answer3.setAttribute("data-answer", "c");
     answer4.innerHTML = questions.d;
     answer4.setAttribute("data-answer", "d");
-};
+}
 
 
 // Add a eventlistener for the answer buttons to see what value was clicked
@@ -156,6 +160,11 @@ answer4.addEventListener("click", function () {
     checkAnswer("d");
 });
 
+/**
+ * Checks if the user clicked the correct answer and then disables the buttons so they cannot change answer.
+ * Then shows the next question button and depending on if the user got it right, increases the correct or wrong
+ * answers counter.
+ */
 function checkAnswer(answer) {
     if (isDisabled) {
         return;
@@ -169,16 +178,17 @@ function checkAnswer(answer) {
             answerButtons[i].classList.add("correct-answer");
             if (answer === correctAnswer) {
                 incrementScore();
-            }
+            } // If the users answer was not correct:
         } else {
             answerButtons[i].classList.add("wrong-answer");
             if (answer !== correctAnswer) {
                 incrementWrongAnswer();
             }
         }
-    };
+    }
     nextQuestionButton.classList.remove("hide");
-};
+}
+
 
 /**
  * Get the current score from the dom and increment it by 1
@@ -188,12 +198,13 @@ function incrementScore() {
     document.getElementById("correct-score-amount").innerText = ++oldScore;
 }
 
+
 /**
  * Get the current wrong score from the dom and increment it by 1
  */
 function incrementWrongAnswer() {
     let oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
-    document.getElementById("wrong-score-amount").innerText = oldWrongScore + 1;
+    document.getElementById("wrong-score-amount").innerText = ++oldWrongScore;
 }
 
 
