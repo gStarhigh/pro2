@@ -126,7 +126,7 @@ function setNextQuestion() {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].removeAttribute("disabled");
     }
-};
+}
 
 // Shows the question and the alternatives in the correct buttons, also stores the data answer for each button.
 function showQuestion(questions) {
@@ -167,12 +167,35 @@ function checkAnswer(answer) {
         answerButtons[i].removeAttribute("disabled");
         if (answerButtons[i].getAttribute("data-answer") === correctAnswer) {
             answerButtons[i].classList.add("correct-answer");
+            if (answer === correctAnswer) {
+                incrementScore();
+            }
         } else {
             answerButtons[i].classList.add("wrong-answer");
+            if (answer !== correctAnswer) {
+                incrementWrongAnswer();
+            }
         }
     };
     nextQuestionButton.classList.remove("hide");
 };
+
+/**
+ * Get the current score from the dom and increment it by 1
+ */
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
+    document.getElementById("correct-score-amount").innerText = ++oldScore;
+}
+
+/**
+ * Get the current wrong score from the dom and increment it by 1
+ */
+function incrementWrongAnswer() {
+    let oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
+    document.getElementById("wrong-score-amount").innerText = oldWrongScore + 1;
+}
+
 
 
 /**
@@ -184,4 +207,4 @@ function resetQuiz() {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("correct-answer", "wrong-answer");
     }
-};
+}
