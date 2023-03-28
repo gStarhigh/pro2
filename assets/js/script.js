@@ -120,7 +120,6 @@ nextQuestionButton.addEventListener("click", () => {
 });
 
 // Play again button, when clicked, hides the finished section and displays the difficulties section.
-
 playAgainButton.addEventListener("click", function () {
     finishedSection.classList.add("hide");
     difficultySection.classList.remove("hide");
