@@ -22,6 +22,7 @@ const answerButtons = document.getElementsByClassName("alternatives");
 
 let currentQuestionIndex;
 let shuffledQuestions;
+let isDisabled = false;
 
 
 // Focus on the username box when the page is loaded
@@ -116,9 +117,14 @@ function runGame(difficulty) {
 };
 
 function setNextQuestion() {
+    isDisabled = false;
     resetQuiz();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].removeAttribute("disabled");
+    }
 };
+
 
 function showQuestion(questions) {
     questionText.innerHTML = questions.question;
@@ -148,6 +154,10 @@ answer4.addEventListener("click", function () {
 });
 
 function checkAnswer(answer) {
+    if (isDisabled) {
+        return;
+    }
+    isDisabled = true;
     const correctAnswer = shuffledQuestions[currentQuestionIndex].answer;
     if (answer === correctAnswer) {
         // If the answer is correct
