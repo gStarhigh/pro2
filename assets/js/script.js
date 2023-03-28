@@ -88,15 +88,18 @@ hardButton.addEventListener("click", function () {
     runGame("hard");
 });
 
-// Next question button event listener
 
+// Next question button event listener
 nextQuestionButton.addEventListener("click", () => {
     currentQuestionIndex++
     setNextQuestion();
 });
 
-// Game
 
+/**
+ * Runs the game and shows the questions depending on the users 
+ * difficulty settingand sorts the questions randomly and
+ */
 function runGame(difficulty) {
     if (difficulty === "easy") {
         shuffledQuestions = easyQuestions.sort(() => Math.random() - .5);
@@ -111,10 +114,10 @@ function runGame(difficulty) {
     difficultySection.classList.add("hide");
     questionsSection.classList.remove("hide");
 
-
     // Calls setNextQuestions function
     setNextQuestion();
 };
+
 
 function setNextQuestion() {
     isDisabled = false;
@@ -125,7 +128,7 @@ function setNextQuestion() {
     }
 };
 
-
+// Shows the question and the alternatives in the correct buttons, also stores the data answer for each button.
 function showQuestion(questions) {
     questionText.innerHTML = questions.question;
     answer1.innerHTML = questions.a;
@@ -138,8 +141,8 @@ function showQuestion(questions) {
     answer4.setAttribute("data-answer", "d");
 };
 
-// Add a eventlistener for the answer buttons to see what value was clicked
 
+// Add a eventlistener for the answer buttons to see what value was clicked
 answer1.addEventListener("click", function () {
     checkAnswer("a");
 });
@@ -159,19 +162,23 @@ function checkAnswer(answer) {
     }
     isDisabled = true;
     const correctAnswer = shuffledQuestions[currentQuestionIndex].answer;
-    if (answer === correctAnswer) {
-        // If the answer is correct
-        console.log("correct answer");
-        nextQuestionButton.classList.remove("hide");
-        document.querySelector(`[data-answer="${correctAnswer}"]`).classList.add("correct-answer");
-    } else {
-        // the answer is incorrect
-        console.log("incorrect answer");
-        document.querySelector(`[data-answer="${answer}"]`).classList.add("wrong-answer");
-    }
+
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].removeAttribute("disabled");
+        if (answerButtons[i].getAttribute("data-answer") === correctAnswer) {
+            answerButtons[i].classList.add("correct-answer");
+        } else {
+            answerButtons[i].classList.add("wrong-answer");
+        }
+    };
+    nextQuestionButton.classList.remove("hide");
 };
 
 
+/**
+ * Resets the quiz, adds the Hide element to the next button and
+ * removes the classes to the buttons for the next question.
+ */
 function resetQuiz() {
     nextQuestionButton.classList.add("hide");
     for (let i = 0; i < answerButtons.length; i++) {

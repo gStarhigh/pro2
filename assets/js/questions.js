@@ -9,7 +9,7 @@ const easyQuestions = [{
     {
         question: "What was the name of Harry's parents?",
         a: "Lily & James",
-        b: "Nymphadora & ",
+        b: "Nymphadora & Remus",
         c: "Arthur & Molly",
         d: "Frank & Lily",
         answer: "a",
