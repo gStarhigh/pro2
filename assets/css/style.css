@@ -323,4 +323,8 @@ h3 {
     .next-question button {
         font-size: 200%;
     }
+
+    .time-left {
+        top: 80%;
+    }
 }
