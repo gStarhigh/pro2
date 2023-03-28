@@ -127,6 +127,31 @@ function showQuestion(questions) {
     answer4.innerHTML = questions.d;
 };
 
+// Add a eventlistener for the answer buttons to see what value was clicked
+
+answer1.addEventListener("click", function () {
+    checkAnswer("a");
+});
+answer2.addEventListener("click", function () {
+    checkAnswer("b");
+});
+answer3.addEventListener("click", function () {
+    checkAnswer("c");
+});
+answer4.addEventListener("click", function () {
+    checkAnswer("d");
+});
+
+function checkAnswer(answer) {
+    if (answer === shuffledQuestions[currentQuestionIndex].answer) {
+        // If the answer is correct
+        console.log("correct answer");
+    } else {
+        // the answer is incorrect
+        console.log("incorrect answer");
+    }
+};
+
 
 function resetQuiz() {
     nextQuestionButton.classList.add("hide");
