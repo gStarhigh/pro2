@@ -115,6 +115,7 @@ function runGame(difficulty) {
 };
 
 function setNextQuestion() {
+    resetQuiz();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 };
 
@@ -126,6 +127,7 @@ function showQuestion(questions) {
     answer4.innerHTML = questions.d;
 };
 
-function selectAnswer() {
 
+function resetQuiz() {
+    nextQuestionButton.classList.add("hide");
 }
