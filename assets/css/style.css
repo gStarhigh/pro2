@@ -172,7 +172,7 @@ html {
 .next-question {
     position: absolute;
     top: 28%;
-    left: 90%;
+    left: 48%;
     background-color: black;
 }
 
@@ -293,16 +293,20 @@ h3 {
     .menu-bar,
     .start-button {
         max-width: 90vw;
-        min-height: 80%;
+        min-height: 90%;
     }
 
     .username {
         width: 90%;
     }
 
+    .question {
+        margin-top: 40px;
+    }
+
     .alternative-box {
         display: block;
-        top: 55%;
+        top: 60%;
     }
 
     .alternatives {
@@ -313,6 +317,7 @@ h3 {
     .difficulty-buttons {
         flex-direction: column;
         margin-left: 4%;
+        margin-top: 20%;
     }
 
     .diff-btns {
@@ -321,8 +326,8 @@ h3 {
 
     .next-question {
         display: block;
-        top: 25%;
-        left: 75%;
+        top: 30%;
+        left: 48%;
     }
 
     .next-question button {
@@ -330,12 +335,12 @@ h3 {
     }
 
     .time-left {
-        top: 80%;
+        top: 85%;
         left: 10vw;
     }
 
     .questions-score {
         flex-direction: column;
-        top: 88%;
+        top: 90%;
     }
 }
