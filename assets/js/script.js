@@ -22,6 +22,7 @@ const playAgainButton = document.getElementById("play-again-button");
 const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
 const timeleftText = document.getElementsByClassName("actual-time-left");
+const enterUsername = document.getElementById("gamer-tag-info");
 
 
 // Let variables
@@ -67,7 +68,9 @@ startBtn.addEventListener("click", function (event) {
     event.preventDefault();
     let username = usernameInput.value.trim();
     if (username === "") {
-        alert("Gamer tag can't be empty, please choose a Gamer tag and try again!");
+        enterUsername.innerText = `Gamer tag can't be empty, please choose a Gamer tag and try again!`;
+        enterUsername.style.color = "red";
+        enterUsername.style.fontSize = "150%";
         return;
     }
     // If the username is not empty, remove the hide class from the difficulty section
@@ -124,7 +127,7 @@ playAgainButton.addEventListener("click", function () {
     questionsAnswered = 0;
     document.getElementById("correct-score-amount").innerText = 0;
     document.getElementById("wrong-score-amount").innerText = 0;
-})
+});
 
 /**
  * Runs the game and shows the questions depending on the users 
@@ -230,7 +233,7 @@ function checkAnswer(answer) {
 function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
-    finishedScoreText.innerText = `You got ${oldScore} out of 5 correct answers!`
+    finishedScoreText.innerText = `You got ${oldScore} out of 5 correct answers!`;
 }
 
 
