@@ -19,6 +19,8 @@ const answer4 = document.getElementById("alternative-4");
 const questionText = document.getElementById("question-text");
 const answerButtons = document.getElementsByClassName("alternatives");
 const playAgainButton = document.getElementById("play-again-button");
+const finishedHeadline = document.getElementById("finished-headline");
+const finishedScoreText = document.getElementById("finished-score-text");
 
 
 let currentQuestionIndex;
@@ -54,10 +56,10 @@ startBtn.addEventListener("click", function (event) {
         alert("Gamer tag can't be empty, please choose a Gamer tag and try again!");
         return;
     }
-
     // If the username is not empty, remove the hide class from the difficulty section
     welcomeSection.classList.add("hide");
     rulesSection.classList.remove("hide");
+    finishedHeadline.innerText = `Congratulations ${username}! You finished the game!`;
 });
 
 
@@ -211,6 +213,7 @@ function checkAnswer(answer) {
 function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
+    finishedScoreText.innerText = `You got ${oldScore} out of 5!`
 }
 
 
