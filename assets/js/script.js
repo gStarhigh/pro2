@@ -23,6 +23,7 @@ const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
 const timeleftText = document.getElementsByClassName("actual-time-left");
 
+
 // Let variables
 // For the questions
 let currentQuestionIndex;
@@ -39,21 +40,10 @@ let timerIntervalId;
 
 
 //Start the Timer
-function startTimer() {
-    timerIntervalId = setInterval(() => {
-        timeleft--;
-        timeleftText.innerText = timeleft;
-        if (timeleft <= 0) {
-            clearInterval(timerIntervalId);
-            alert("Time is up!")
-        }
-    }, 1000);
-}
+
 
 // Stop the Timer
-function stopTimer() {
-    clearInterval(timerIntervalId);
-}
+
 
 
 // Focus on the username box when the page is loaded
@@ -75,7 +65,7 @@ welcomeSection.classList.remove("hide");
  */
 startBtn.addEventListener("click", function (event) {
     event.preventDefault();
-    var username = usernameInput.value.trim();
+    let username = usernameInput.value.trim();
     if (username === "") {
         alert("Gamer tag can't be empty, please choose a Gamer tag and try again!");
         return;
@@ -167,9 +157,6 @@ function setNextQuestion() {
         for (let i = 0; i < answerButtons.length; i++) {
             answerButtons[i].removeAttribute("disabled");
         }
-        startTimer();
-    } else {
-        stopTimer();
     }
 }
 
