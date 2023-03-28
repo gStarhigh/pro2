@@ -146,6 +146,7 @@ function checkAnswer(answer) {
     if (answer === shuffledQuestions[currentQuestionIndex].answer) {
         // If the answer is correct
         console.log("correct answer");
+        nextQuestionButton.classList.remove("hide");
     } else {
         // the answer is incorrect
         console.log("incorrect answer");
