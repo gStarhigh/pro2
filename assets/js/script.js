@@ -21,7 +21,7 @@ const answerButtons = document.getElementsByClassName("alternatives");
 const playAgainButton = document.getElementById("play-again-button");
 const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
-const timeleftText = document.getElementsByClassName("actual-time-left");
+const timeLeftText = document.getElementsByClassName("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 
 
@@ -36,15 +36,37 @@ let questionsAnswered = 0;
 let oldScore = 0;
 let oldWrongScore = 0;
 // Timer variable
-let timeleft = 20;
+let timeLeft = 20;
 let timerIntervalId;
+let timer;
 
 
 //Start the Timer
+function startTimer() {
+    timeLeft = 20;
+    timer = setInterval(function () {
+        countdown();
+        timeLeftText.innerText = timeLeft;
+        if (timeLeft < 5) {
+            timeLeftText.style.color = "red";
+        } else {
+            timeLeftText.style.color = "white";
+        }
+    }, 1000);
+}
+// Timer Countdown
+
+function countdown() {
+    if (timeLeft === 0) {
+        stopTimer();
+    }
+}
 
 
 // Stop the Timer
-
+function stopTimer() {
+    clearInterval(timerIntervalId);
+}
 
 
 // Focus on the username box when the page is loaded
@@ -152,6 +174,7 @@ function runGame(difficulty) {
 
 
 function setNextQuestion() {
+    startTimer();
     isDisabled = false;
     resetQuiz();
     if (currentQuestionIndex < shuffledQuestions.length) {
@@ -223,6 +246,7 @@ function checkAnswer(answer) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
     }
+    stopTimer();
 }
 
 
