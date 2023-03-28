@@ -228,6 +228,11 @@ h3 {
     padding-top: 40px;
 }
 
+.finished-score {
+    padding-top: 80px;
+    font-size: 140%;
+}
+
 .play-again {
     display: grid;
     position: absolute;

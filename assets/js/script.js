@@ -213,7 +213,7 @@ function checkAnswer(answer) {
 function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
-    finishedScoreText.innerText = `You got ${oldScore} out of 5!`
+    finishedScoreText.innerText = `You got ${oldScore} out of 5 correct answers!`
 }
 
 
