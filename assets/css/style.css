@@ -23,6 +23,11 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
+.home-button {
+    color: var(--btn-clr);
+    text-decoration: none;
+}
+
 /*Multiple elements classes*/
 .trans {
     transform: translate(-50%, -50%);
@@ -70,8 +75,10 @@ html {
 .home-icon,
 .hamburger {
     font-size: 180%;
+    margin-top: 10px;
     padding: 10px 20px;
     color: var(--txt-clr);
+    border-radius: 20px;
 }
 
 /*Welcome text*/
@@ -179,13 +186,14 @@ html {
     display: flex;
     position: absolute;
     top: 90%;
-    left: 47%;
+    left: 10%;
     font-size: 150%;
 }
 
 .time-left p {
     margin-left: 10px;
 }
+
 
 .questions-score {
     display: flex;
@@ -272,4 +280,47 @@ h3 {
 
 #to-diff-button:hover {
     font-size: 170%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .game,
+    .menu-bar,
+    .start-button {
+        max-width: 90vw;
+        min-height: 80%;
+    }
+
+    .username {
+        width: 90%;
+    }
+
+    .alternative-box {
+        display: block;
+        top: 55%;
+    }
+
+    .alternatives {
+        height: 60px;
+        width: 80vw;
+    }
+
+    .difficulty-buttons {
+        flex-direction: column;
+        margin-left: 4%;
+    }
+
+    .diff-btns {
+        width: 80vw;
+    }
+
+    .next-question {
+        display: block;
+        top: 25%;
+        left: 75%;
+    }
+
+    .next-question button {
+        font-size: 200%;
+    }
 }
