@@ -26,9 +26,9 @@ let shuffledQuestions;
 let isDisabled = false;
 //keeping track of the number of questions answered
 let questionsAnswered = 0;
-const totalEasyQuestions = 5;
-const totaltMediumQuestions = 5;
-const totaltHardQuestions = 5;
+let oldScore = 0;
+let oldWrongScore = 0;
+
 
 // Focus on the username box when the page is loaded
 document.getElementById("username").focus();
@@ -105,6 +105,9 @@ nextQuestionButton.addEventListener("click", () => {
 playAgainButton.addEventListener("click", function () {
     finishedSection.classList.add("hide");
     difficultySection.classList.remove("hide");
+    questionsAnswered = 0;
+    document.getElementById("correct-score-amount").innerText = 0;
+    document.getElementById("wrong-score-amount").innerText = 0;
 })
 
 /**
@@ -206,7 +209,7 @@ function checkAnswer(answer) {
  * Get the current score from the dom and increment it by 1
  */
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
+    oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
 }
 
@@ -215,7 +218,7 @@ function incrementScore() {
  * Get the current wrong score from the dom and increment it by 1
  */
 function incrementWrongAnswer() {
-    let oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
+    oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
     document.getElementById("wrong-score-amount").innerText = ++oldWrongScore;
 }
 
