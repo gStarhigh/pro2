@@ -1,4 +1,4 @@
-// Variables
+// Const Variables
 const startBtn = document.getElementById("start-btn");
 const usernameForm = document.getElementById("username-form");
 const usernameInput = document.getElementById("username");
@@ -21,15 +21,39 @@ const answerButtons = document.getElementsByClassName("alternatives");
 const playAgainButton = document.getElementById("play-again-button");
 const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
+const timeleftText = document.getElementsByClassName("actual-time-left");
 
-
+// Let variables
+// For the questions
 let currentQuestionIndex;
 let shuffledQuestions;
+// Disable variable for the answer buttons
 let isDisabled = false;
 //keeping track of the number of questions answered
 let questionsAnswered = 0;
 let oldScore = 0;
 let oldWrongScore = 0;
+// Timer variable
+let timeleft = 20;
+let timerIntervalId;
+
+
+//Start the Timer
+function startTimer() {
+    timerIntervalId = setInterval(() => {
+        timeleft--;
+        timeleftText.innerText = timeleft;
+        if (timeleft <= 0) {
+            clearInterval(timerIntervalId);
+            alert("Time is up!")
+        }
+    }, 1000);
+}
+
+// Stop the Timer
+function stopTimer() {
+    clearInterval(timerIntervalId);
+}
 
 
 // Focus on the username box when the page is loaded
@@ -138,11 +162,17 @@ function runGame(difficulty) {
 function setNextQuestion() {
     isDisabled = false;
     resetQuiz();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
-    for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].removeAttribute("disabled");
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        showQuestion(shuffledQuestions[currentQuestionIndex]);
+        for (let i = 0; i < answerButtons.length; i++) {
+            answerButtons[i].removeAttribute("disabled");
+        }
+        startTimer();
+    } else {
+        stopTimer();
     }
 }
+
 
 // Shows the question and the alternatives in the correct buttons, also stores the data answer for each button.
 function showQuestion(questions) {

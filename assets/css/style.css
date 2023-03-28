@@ -198,8 +198,9 @@ html {
 .questions-score {
     display: flex;
     position: absolute;
-    top: 91%;
+    top: 85%;
     right: 5%;
+    background-color: transparent;
 }
 
 .score-amount {
@@ -341,7 +342,7 @@ p {
     }
 
     .questions-score {
-        flex-direction: column;
+        flex-direction: row;
         top: 90%;
     }
 }
