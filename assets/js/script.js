@@ -262,6 +262,7 @@ function checkAnswer(answer) {
     if (questionsAnswered === 5) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
+        finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
     }
     stopTimer();
 }
@@ -273,7 +274,6 @@ function checkAnswer(answer) {
 function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
-    finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
 }
 
 
