@@ -110,8 +110,22 @@ startBtn.addEventListener("click", function (event) {
     // If the username is not empty, remove the hide class from the difficulty section
     welcomeSection.classList.add("hide");
     rulesSection.classList.remove("hide");
-    finishedHeadline.innerText = `Congratulations ${username}! You finished the game!`;
+    const timestamp = new Date().getTime(); // Added a timestamp and date to make sure you get the correct username
+    localStorage.setItem(`username-${timestamp}`, JSON.stringify(username));
+    console.log(localStorage);
 });
+
+// Get the latest saved username by finding the latest timestamp key
+let savedUserName = null;
+for (let i = localStorage.length - 1; i >= 0; i--) {
+    const key = localStorage.key(i);
+    if (key.startsWith("username-")) {
+        savedUserName = JSON.parse(localStorage.getItem(key));
+        break;
+    }
+}
+
+finishedHeadline.innerText = `Congratulations ${savedUserName}! You finished the game!`;
 
 
 // Listens for a submit event on the username form, but does not perform any action

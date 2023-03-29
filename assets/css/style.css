@@ -288,7 +288,7 @@ p {
 .rules {
     position: absolute;
     display: grid;
-    top: 40%;
+    top: 50%;
     left: 50%;
 }
 
@@ -303,6 +303,10 @@ p {
 
 .rules-list li {
     padding-top: 10px;
+}
+
+.nested-list {
+    list-style-type: upper-roman;
 }
 
 #to-diff-button {
