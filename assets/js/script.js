@@ -259,7 +259,7 @@ function checkAnswer(answer) {
     }
     nextQuestionButton.classList.remove("hide");
     questionsAnswered += 1;
-    if (questionsAnswered === 5) {
+    if (questionsAnswered === 10) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
         if (oldScore === shuffledQuestions.length) {
