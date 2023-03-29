@@ -262,7 +262,13 @@ function checkAnswer(answer) {
     if (questionsAnswered === 5) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
-        finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+        if (oldScore === shuffledQuestions.length) {
+            finishedScoreText.innerText = `Wow! You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+        } else if (oldScore === 0) {
+            finishedScoreText.innerText = `Better luck next time "first year". You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+        } else {
+            finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+        }
     }
     stopTimer();
 }
