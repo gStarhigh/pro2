@@ -16,7 +16,8 @@
 }
 
 html {
-    background: url(../images/wp8944713-4k-universal-studios-wallpapers.jpg) no-repeat center center;
+    /* Image credit: https://www.wallpaperflare.com/brown-and-green-floral-wall-decor-slytherin-sonserina-harry-potter-wallpaper-phfmf/download/1920x1080*/
+    background: url(../images/wallpaperflare.com_wallpaper.jpg) no-repeat center center;
     background-size: cover;
     min-height: 100%;
     color: var(--txt-clr);
