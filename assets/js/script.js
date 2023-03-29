@@ -33,7 +33,7 @@ let isDisabled = false; // Used to disable answer buttons
 let questionsAnswered = 0; // Keeps track of the number of questions answered
 let oldScore = 0; // Stores the score from previous questions
 let oldWrongScore = 0; // Stores the number of wrong answers from previous questions
-let timeLeft = 20; // Stores the remaining time for answering a question
+let timeLeft = 15; // Stores the remaining time for answering a question
 let timer; // Used to track the countdown timer
 
 
@@ -43,11 +43,11 @@ let timer; // Used to track the countdown timer
  * color of the timer gets Red, otherwise it's white.
  */
 function startTimer() {
-    timeLeft = 20;
+    timeLeft = 15;
     timer = setInterval(function () {
         countdown();
         timeLeftText.innerText = timeLeft;
-        if (timeLeft < 5) {
+        if (timeLeft < 6) {
             timeLeftText.style.color = "red";
         } else {
             timeLeftText.style.color = "white";
