@@ -31,7 +31,7 @@ let currentQuestionIndex;
 let shuffledQuestions;
 // Disable variable for the answer buttons
 let isDisabled = false;
-//keeping track of the number of questions answered
+//Keeping track of the number of questions answered and the score
 let questionsAnswered = 0;
 let oldScore = 0;
 let oldWrongScore = 0;
@@ -40,6 +40,7 @@ let timeLeft = 20;
 let timer;
 
 
+// Timer functions
 //Start the Timer
 function startTimer() {
     timeLeft = 20;
@@ -53,8 +54,8 @@ function startTimer() {
         }
     }, 1000);
 }
-// Timer Countdown
 
+// Timer Countdown
 function countdown() {
     if (timeLeft === 0) {
         stopTimer();
@@ -63,7 +64,6 @@ function countdown() {
         timeLeft -= 1;
     }
 }
-
 
 // Stop the Timer
 function stopTimer() {
@@ -74,14 +74,15 @@ function stopTimer() {
 // Focus on the username box when the page is loaded
 document.getElementById("username").focus();
 
+
 // Adds the hide class to all sections except the welcome section
 difficultySection.classList.add("hide");
 questionsSection.classList.add("hide");
 finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
-
 // Removes the hide class from the welcome section
 welcomeSection.classList.remove("hide");
+
 
 /**
  * Listens after a click from the user on the start button, checks so the username is not empty,
@@ -122,9 +123,7 @@ toDiffbutton.addEventListener("click", function (event) {
 });
 
 
-
 // Game Section
-
 // Event listeners for the difficulties
 easyButton.addEventListener("click", function () {
     runGame("easy");
@@ -143,6 +142,7 @@ nextQuestionButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
+
 // Play again button, when clicked, hides the finished section and displays the difficulties section.
 playAgainButton.addEventListener("click", function () {
     finishedSection.classList.add("hide");
@@ -151,6 +151,7 @@ playAgainButton.addEventListener("click", function () {
     document.getElementById("correct-score-amount").innerText = 0;
     document.getElementById("wrong-score-amount").innerText = 0;
 });
+
 
 /**
  * Runs the game and shows the questions depending on the users 
@@ -175,6 +176,9 @@ function runGame(difficulty) {
 }
 
 
+/**
+ * When you click the nextquestionbutton it starts the timer, it disables the answers. 
+ */
 function setNextQuestion() {
     startTimer();
     isDisabled = false;
@@ -215,6 +219,7 @@ answer3.addEventListener("click", function () {
 answer4.addEventListener("click", function () {
     checkAnswer("d");
 });
+
 
 /**
  * Checks if the user clicked the correct answer and then disables the buttons so they cannot change answer.
@@ -269,7 +274,6 @@ function incrementWrongAnswer() {
     oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
     document.getElementById("wrong-score-amount").innerText = ++oldWrongScore;
 }
-
 
 
 /**
