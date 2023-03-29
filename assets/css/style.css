@@ -117,6 +117,10 @@ html {
     font-family: "Roboto";
 }
 
+.start-button:hover {
+    font-size: 170%;
+}
+
 /*Choose a difficulty section*/
 /*Difficulty buttons*/
 
@@ -136,8 +140,12 @@ html {
     border-style: none;
     background-color: var(--btn-clr);
     color: var(--txt-btn-clr);
+    font-size: 120%;
 }
 
+.diff-btns:hover {
+    letter-spacing: 1.5px;
+}
 
 /*Questions section*/
 
@@ -162,7 +170,8 @@ html {
 }
 
 .alternatives:hover {
-    opacity: 0.8;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
 }
 
 .question {
@@ -256,6 +265,10 @@ p {
     background-color: transparent;
 }
 
+.play-again-text {
+    font-size: 140%;
+}
+
 .play-again-button {
     margin: 10px 60px;
     height: 80px;
@@ -263,6 +276,11 @@ p {
     background-color: var(--btn-clr);
     border-radius: 10px;
     color: var(--txt-btn-clr);
+    font-size: 150%;
+}
+
+.play-again-button:hover {
+    letter-spacing: 1.5px;
 }
 
 /*Game rules section*/
@@ -300,7 +318,7 @@ p {
 }
 
 #to-diff-button:hover {
-    font-size: 170%;
+    letter-spacing: 1.5px;
 }
 
 @media only screen and (max-width: 900px) {
