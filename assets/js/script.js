@@ -21,7 +21,7 @@ const answerButtons = document.getElementsByClassName("alternatives");
 const playAgainButton = document.getElementById("play-again-button");
 const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
-const timeLeftText = document.getElementsByClassName("actual-time-left");
+const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 
 
@@ -37,7 +37,6 @@ let oldScore = 0;
 let oldWrongScore = 0;
 // Timer variable
 let timeLeft = 20;
-let timerIntervalId;
 let timer;
 
 
@@ -59,13 +58,16 @@ function startTimer() {
 function countdown() {
     if (timeLeft === 0) {
         stopTimer();
+        checkAnswer();
+    } else {
+        timeLeft -= 1;
     }
 }
 
 
 // Stop the Timer
 function stopTimer() {
-    clearInterval(timerIntervalId);
+    clearInterval(timer);
 }
 
 
