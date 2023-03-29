@@ -1,4 +1,5 @@
 // Const Variables
+// Constant Variables that store elements from the DOM
 const startBtn = document.getElementById("start-btn");
 const usernameForm = document.getElementById("username-form");
 const usernameInput = document.getElementById("username");
@@ -25,23 +26,22 @@ const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 
 
-// Let variables
-// For the questions
-let currentQuestionIndex;
-let shuffledQuestions;
-// Disable variable for the answer buttons
-let isDisabled = false;
-//Keeping track of the number of questions answered and the score
-let questionsAnswered = 0;
-let oldScore = 0;
-let oldWrongScore = 0;
-// Timer variable
-let timeLeft = 20;
-let timer;
+// Let variables that can be reassigned
+let currentQuestionIndex; // Keeps track of the index of the current question being asked
+let shuffledQuestions; // Stores the questions in a shuffled order
+let isDisabled = false; // Used to disable answer buttons
+let questionsAnswered = 0; // Keeps track of the number of questions answered
+let oldScore = 0; // Stores the score from previous questions
+let oldWrongScore = 0; // Stores the number of wrong answers from previous questions
+let timeLeft = 20; // Stores the remaining time for answering a question
+let timer; // Used to track the countdown timer
 
 
 // Timer functions
-//Start the Timer
+/**
+ * Starts the timer with 20seconds on the clock. If there is less than 5seconds remaining the
+ * color of the timer gets Red, otherwise it's white.
+ */
 function startTimer() {
     timeLeft = 20;
     timer = setInterval(function () {
@@ -55,6 +55,9 @@ function startTimer() {
     }, 1000);
 }
 
+/**
+ * Checks if the timer has reached 0, if not, decrements the remaining time by 1.
+ */
 // Timer Countdown
 function countdown() {
     if (timeLeft === 0) {
@@ -65,22 +68,29 @@ function countdown() {
     }
 }
 
-// Stop the Timer
+/**
+ * Stops the timer when the stopTimer is called
+ */
 function stopTimer() {
     clearInterval(timer);
 }
 
 
-// Focus on the username box when the page is loaded
+/**
+ * When the page is loaded, the username input has focus and the user can start to type
+ * in their username without having to click in the input box.
+ */
 document.getElementById("username").focus();
 
 
-// Adds the hide class to all sections except the welcome section
+/**
+ * When the page is loaded, adds the hide class to all sections and removes it, if there is one,
+ * on the welcome section.
+ */
 difficultySection.classList.add("hide");
 questionsSection.classList.add("hide");
 finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
-// Removes the hide class from the welcome section
 welcomeSection.classList.remove("hide");
 
 
@@ -112,8 +122,8 @@ usernameForm.addEventListener("submit", function (event) {
 
 
 /**
- * Listens for a click on the to difficulty section button and then removes the hide element
- *  on the difficulty section and adds it to the rules section
+ * Listens for a click on the "To Difficulty" button, and removes the hide element from the
+ * difficulty section and adds it to the rules section.
  */
 toDiffbutton.addEventListener("click", function (event) {
     event.preventDefault();
@@ -154,8 +164,8 @@ playAgainButton.addEventListener("click", function () {
 
 
 /**
- * Runs the game and shows the questions depending on the users 
- * difficulty settingand sorts the questions randomly and
+ * Runs the game with the specified difficulty. Randomly sorts the questions and initializes
+ * the currentQuestionIndex to 0.
  */
 function runGame(difficulty) {
     if (difficulty === "easy") {
@@ -177,7 +187,8 @@ function runGame(difficulty) {
 
 
 /**
- * When you click the nextquestionbutton it starts the timer, it disables the answers. 
+ * When you click the nextquestionbutton it starts the timer, it disables the answers.
+ * It also calls the resetQuiz function.
  */
 function setNextQuestion() {
     startTimer();
@@ -206,7 +217,10 @@ function showQuestion(questions) {
 }
 
 
-// Add a eventlistener for the answer buttons to see what value was clicked
+/**
+ * When the user clicks an answer, it checks what button was clicked and uses that information in the
+ * checkAnswer function
+ */
 answer1.addEventListener("click", function () {
     checkAnswer("a");
 });
