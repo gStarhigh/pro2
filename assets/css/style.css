@@ -185,13 +185,16 @@ html {
 .time-left {
     display: flex;
     position: absolute;
-    top: 90%;
+    top: 83%;
     left: 10%;
-    font-size: 150%;
+    font-size: 200%;
+    align-items: center;
+    background-color: transparent;
 }
 
-.time-left p {
-    margin-left: 10px;
+#actual-time-left {
+    margin-left: 20px;
+    font-size: 100%;
 }
 
 
