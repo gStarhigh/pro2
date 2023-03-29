@@ -32,7 +32,6 @@ let shuffledQuestions; // Stores the questions in a shuffled order
 let isDisabled = false; // Used to disable answer buttons
 let questionsAnswered = 0; // Keeps track of the number of questions answered
 let oldScore = 0; // Stores the score from previous questions
-let oldWrongScore = 0; // Stores the number of wrong answers from previous questions
 let timeLeft = 15; // Stores the remaining time for answering a question
 let timer; // Used to track the countdown timer
 
@@ -256,9 +255,6 @@ function checkAnswer(answer) {
             } // If the users answer was not correct:
         } else {
             answerButtons[i].classList.add("wrong-answer");
-            if (answer !== correctAnswer) {
-                incrementWrongAnswer();
-            }
         }
     }
     nextQuestionButton.classList.remove("hide");
@@ -278,15 +274,6 @@ function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
     finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
-}
-
-
-/**
- * Get the current wrong score from the dom and increment it by 1
- */
-function incrementWrongAnswer() {
-    oldWrongScore = parseInt(document.getElementById("wrong-score-amount").innerText);
-    document.getElementById("wrong-score-amount").innerText = ++oldWrongScore;
 }
 
 
