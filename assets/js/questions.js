@@ -230,7 +230,7 @@ const hardQuestions = [{
         question: "What is the name of the village where Harry was born?",
         a: "London",
         b: "Hogsmeade",
-        c: "",
+        c: "Barnton",
         d: "Godrics Hollow",
         answer: "d",
     },
