@@ -206,7 +206,7 @@ html {
 .time-left {
     display: flex;
     position: absolute;
-    top: 83%;
+    top: 87%;
     left: 10%;
     font-size: 200%;
     align-items: center;
@@ -222,7 +222,7 @@ html {
 .questions-score {
     display: flex;
     position: absolute;
-    top: 85%;
+    top: 88%;
     right: 5%;
     background-color: transparent;
 }
@@ -349,13 +349,17 @@ html {
         margin-top: 20px;
     }
 
+    .welcome-headline {
+        margin: 50px 5px;
+    }
+
     .question {
-        margin-top: 40px;
+        margin-top: 45px;
     }
 
     .alternative-box {
         display: block;
-        top: 60%;
+        top: 55%;
     }
 
     .alternatives {
@@ -365,7 +369,7 @@ html {
 
     .difficulty-buttons {
         flex-direction: column;
-        margin-left: 4%;
+        margin-left: 3%;
         margin-top: 20%;
     }
 
@@ -375,8 +379,8 @@ html {
 
     .next-question {
         display: block;
-        top: 30%;
-        left: 48%;
+        top: 27%;
+        left: 46%;
     }
 
     .next-question button {
@@ -384,7 +388,7 @@ html {
     }
 
     .time-left {
-        top: 85%;
+        top: 80%;
         left: 10vw;
     }
 
