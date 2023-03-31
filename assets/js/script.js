@@ -143,7 +143,6 @@ nextQuestionButton.addEventListener("click", () => {
     setNextQuestion();
 });
 
-
 /**
  * When the user clicks the Play Again button, it hides the finished section and displays the difficulties section.
  * it also resets the questionsanswered to 0, and the oldScore to 0.
@@ -155,7 +154,6 @@ playAgainButton.addEventListener("click", function () {
     oldScore = 0;
     document.getElementById("correct-score-amount").innerText = 0;
 });
-
 
 /**
  * Runs the game with the specified difficulty. Randomly sorts the questions and initializes
@@ -179,7 +177,6 @@ function runGame(difficulty) {
     setNextQuestion();
 }
 
-
 /**
  * When you click the nextquestionbutton it starts the timer, it disables the answers.
  * It also calls the resetQuiz function.
@@ -195,7 +192,6 @@ function setNextQuestion() {
         }
     }
 }
-
 
 // Shows the question and the alternatives in the correct buttons, also stores the data answer for each button.
 function showQuestion(questions) {
