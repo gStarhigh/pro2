@@ -50,6 +50,10 @@ html {
     display: none;
 }
 
+.btn-clr {
+    background-color: var(--btn-clr);
+}
+
 /*Welcome to the game page*/
 .game {
     background-color: var(--bgr-clr);
@@ -110,7 +114,6 @@ html {
     height: 80px;
     width: 180px;
     border-radius: 10px;
-    background-color: var(--btn-clr);
     color: var(--txt-btn-clr);
     font-size: 18px;
     font-weight: 500;
@@ -138,7 +141,6 @@ html {
     width: 140px;
     border-radius: 10px;
     border-style: none;
-    background-color: var(--btn-clr);
     color: var(--txt-btn-clr);
     font-size: 120%;
 }
@@ -163,7 +165,6 @@ html {
     margin: 10px 40px;
     height: 80px;
     width: 350px;
-    background-color: var(--btn-clr);
     border-radius: 10px;
     color: var(--txt-btn-clr);
     font-weight: 700;
@@ -242,7 +243,6 @@ html {
 
 
 /*Finished game section*/
-
 .finished-info {
     margin-top: 40px;
 }
@@ -277,7 +277,6 @@ html {
     margin: 10px 60px;
     height: 80px;
     width: 220px;
-    background-color: var(--btn-clr);
     border-radius: 10px;
     color: var(--txt-btn-clr);
     font-size: 150%;
@@ -313,10 +312,9 @@ html {
     list-style-type: upper-roman;
 }
 
-#to-diff-button {
+.to-diff-button {
     margin-top: 50px;
     height: 80px;
-    background-color: var(--btn-clr);
     color: var(--txt-btn-clr);
     font-size: 150%;
     font-weight: 600;
@@ -325,7 +323,7 @@ html {
     border-style: none;
 }
 
-#to-diff-button:hover {
+.to-diff-button:hover {
     letter-spacing: 1.5px;
 }
 
