@@ -125,11 +125,14 @@ The wireframes should not be considered finished product, but as a tool I used a
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
 ### HTML
 - W3C - HTML validator: (https://validator.w3.org/)
-    - W3C Validator for HTML shows no errors on any page.
+    - W3C Validator for HTML shows no errors on the index.html file.
 
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
     - W3C Validator for CSS shows no errors in the style.css file.
+    - The W3C Validator shows a warning "Imported style sheets are not checked in direct input and file upload modes" - This means that the validator have check all CSS code but it cannot check the imported url, in this case it refers to the googlefonts import url. 
+![Image of the Validation](/assets/images/jigsaw-validation.JPG)
+![Image of the shown error](/assets/images/jigsaw-warning.JPG)
 
 ### JavaScript
 - Jshint: (https://jshint.com/)
