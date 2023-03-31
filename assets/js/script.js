@@ -111,7 +111,7 @@ startBtn.addEventListener("click", function (event) {
         // If the username is not empty, remove the hide class from the difficulty section
         welcomeSection.classList.add("hide");
         rulesSection.classList.remove("hide");
-        localStorage.setItem("username", username)
+        localStorage.setItem("username", username);
         console.log(username);
     }
 });
@@ -269,7 +269,7 @@ function checkAnswer(answer) {
         finishedSection.classList.remove("hide");
         if (oldScore === shuffledQuestions.length) {
             finishedHeadline.innerText = `You finished the game!`;
-            statusLevel.innerText = `Awesome ${username}! You received Headmaster status!`
+            statusLevel.innerText = `Awesome ${username}! You received Headmaster status!`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 5 && oldScore <= 9) {
             finishedHeadline.innerText = `You finished the game!`;
