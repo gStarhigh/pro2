@@ -152,14 +152,31 @@ The wireframes should not be considered finished product, but as a tool I used a
 ## Testing on different browsers
 - The website is tested on different devices. The website is responsive on all tested devices. 
 - The website is tested on different browsers. The website is working on all tested browsers.
-    - Tested browsers: 
-
+- Tested browsers: 
+    - Google Chrome
+    - Firefox
+    - Microsoft Edge
 
 ## Device testing on different devices
+- The site has been tested through Chrome Dev tools for responsivness. The site is responsive on all sizes.
+- Simulation test with devices: (the site is responsive and works on all simulated devices)
+    - iPhone 6/7/8 Plus
+    - iPhone X
+    - iPhone XR
+    - iPhone 12 Pro
+    - iPad Air (Rotate)
+    - iPad Mini (Rotate)
+    - Pixel 5
+    - Samsung Galaxy S20 Ultra
+    - Samsung Galaxy A51/71
+- Tested on real devices:
+    - Nothing Phone 1
+    - Laptop
+    - PC
+
 
 ## Testing tools used
 - I have tested the site in Chrome Dev tools. 
-
 - I have tested the site using Lighthouse in Chrome Dev Tools, for both Mobile and Desktop. Results can be found below:
 ![Desktop](/assets/images/lighthouse-desktop.JPG)
 ![Mobile](/assets/images/lighthouse-mobile.JPG)
