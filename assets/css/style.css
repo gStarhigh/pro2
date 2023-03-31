@@ -327,6 +327,7 @@ html {
     letter-spacing: 1.5px;
 }
 
+/*Media queries for screens under 900px*/
 @media only screen and (max-width: 900px) {
 
     .game,
@@ -338,6 +339,14 @@ html {
 
     .username {
         width: 90%;
+    }
+
+    .rules-list {
+        font-size: 90%;
+    }
+
+    .to-diff-button {
+        margin-top: 20px;
     }
 
     .question {
