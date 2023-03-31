@@ -107,7 +107,6 @@ startBtn.addEventListener("click", function (event) {
         welcomeSection.classList.add("hide");
         rulesSection.classList.remove("hide");
         localStorage.setItem("username", username);
-        console.log(username);
     }
 });
 
@@ -272,7 +271,6 @@ function checkAnswer(answer) {
             statusLevel.innerText = `Well...${username}, Not much to say "first year".`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         }
-        console.log("finished", username);
     }
     stopTimer();
 }
