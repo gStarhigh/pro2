@@ -223,7 +223,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 ### Images:
 - The  background images is from:
-    - link (https://wallpapercave.com/w/wp8944713)
+/* Image credit: https://www.wallpaperflare.com/
+    - link (https://www.wallpaperflare.com/brown-and-green-floral-wall-decor-slytherin-sonserina-harry-potter-wallpaper-phfmf)
 
 ### Title Icon:
 - Icon credit, Favicon.
