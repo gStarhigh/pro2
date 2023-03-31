@@ -69,7 +69,7 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
     - btn-clr: #eeeeee
     - txt-clr: Whitesmoke (#F5F5F5)
     - txt-btn-clr: #333
-    
+
 - Correct answer background color = Green
 - Correct answer text color = Black
 - Wrong answer background color = Red
@@ -92,8 +92,8 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/assets/wireframes).
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
 
-![Wireframe of the website on a desktop]()
-![Wireframe of the website on a phone]()
+![Wireframe of the website on a desktop](/assets/wireframes/welcome-section.JPG)
+![Wireframe of the website on a phone](/assets/wireframes/welcome-phone.JPG)
 ---
 
 ## General features
@@ -101,11 +101,11 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ### Home Section
 
-### Courses Section
+### Rules Section
 
-### Sign Up Section
+### Difficulty Section
 
-### Questions Section
+### Game Section
 
 ### Finished Section
 
