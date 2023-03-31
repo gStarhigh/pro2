@@ -106,26 +106,35 @@ startBtn.addEventListener("click", function (event) {
         enterUsername.style.color = "red";
         enterUsername.style.fontSize = "150%";
         return;
+    } else {
+        // If the username is not empty, remove the hide class from the difficulty section
+        welcomeSection.classList.add("hide");
+        rulesSection.classList.remove("hide");
+        const timestamp = new Date().getTime(); // Added a timestamp and date to make sure you get the correct username
+        localStorage.setItem(`username-${timestamp}`, JSON.stringify(username));
+        localStorage.setItem("latest-username", JSON.stringify(username)); // Update latest username key
+
+        // Update the latest username display element in the DOM
+        document.getElementById("finished-headline").innerText = username;
+        console.log(username);
     }
-    // If the username is not empty, remove the hide class from the difficulty section
-    welcomeSection.classList.add("hide");
-    rulesSection.classList.remove("hide");
-    const timestamp = new Date().getTime(); // Added a timestamp and date to make sure you get the correct username
-    localStorage.setItem(`username-${timestamp}`, JSON.stringify(username));
-    console.log(localStorage);
 });
 
-// Get the latest saved username by finding the latest timestamp key
+
+// Get the latest saved username from the separate key in localStorage
+// Get the latest saved username by finding the key with the latest timestamp
+let latestTimestamp = 0;
 let savedUserName = null;
-for (let i = localStorage.length - 1; i >= 0; i--) {
+for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     if (key.startsWith("username-")) {
-        savedUserName = JSON.parse(localStorage.getItem(key));
-        break;
+        const timestamp = parseInt(key.split("-")[1]);
+        if (timestamp > latestTimestamp) {
+            savedUserName = JSON.parse(localStorage.getItem(key));
+            latestTimestamp = timestamp;
+        }
     }
 }
-
-finishedHeadline.innerText = `Congratulations ${savedUserName}! You finished the game!`;
 
 
 // Listens for a submit event on the username form, but does not perform any action
@@ -172,7 +181,6 @@ playAgainButton.addEventListener("click", function () {
     difficultySection.classList.remove("hide");
     questionsAnswered = 0;
     document.getElementById("correct-score-amount").innerText = 0;
-    document.getElementById("wrong-score-amount").innerText = 0;
 });
 
 
@@ -277,6 +285,7 @@ function checkAnswer(answer) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
         if (oldScore === shuffledQuestions.length) {
+            finishedHeadline.innerText = `Congratulations ${savedUserName}! You finished the game!`;
             finishedScoreText.innerText = `Wow! You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore === 0) {
             finishedScoreText.innerText = `Better luck next time "first year". You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
