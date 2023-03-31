@@ -111,33 +111,11 @@ startBtn.addEventListener("click", function (event) {
         // If the username is not empty, remove the hide class from the difficulty section
         welcomeSection.classList.add("hide");
         rulesSection.classList.remove("hide");
-        const timestamp = new Date().getTime(); // Added a timestamp and date to make sure you get the correct username
-        localStorage.setItem(`username-${timestamp}`, JSON.stringify(username));
-        localStorage.setItem("latest-username", JSON.stringify(username)); // Update latest username key
-
-        // Update the latest username display element in the DOM
-        const latestUsername = JSON.parse(localStorage.getItem("latest-username"));
-        statusLevel.innerText = `Current Gamer Tag: ${latestUsername}`;
-        console.log(latestUsername);
+        localStorage.setItem("username", username)
+        console.log(username);
     }
 });
 
-
-
-// Get the latest saved username from the separate key in localStorage
-// Get the latest saved username by finding the key with the latest timestamp
-let latestTimestamp = 0;
-let savedUserName = null;
-for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    if (key.startsWith("username-")) {
-        const timestamp = parseInt(key.split("-")[1]);
-        if (timestamp > latestTimestamp) {
-            savedUserName = JSON.parse(localStorage.getItem(key));
-            latestTimestamp = timestamp;
-        }
-    }
-}
 
 
 // Listens for a submit event on the username form, but does not perform any action
@@ -283,27 +261,30 @@ function checkAnswer(answer) {
         }
     }
     nextQuestionButton.classList.remove("hide");
+
     questionsAnswered += 1;
     if (questionsAnswered === 10) {
+        const username = localStorage.getItem('username');
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
         if (oldScore === shuffledQuestions.length) {
             finishedHeadline.innerText = `You finished the game!`;
-            statusLevel.innerText = `Awesome ${savedUserName}! You received Headmaster status!`
+            statusLevel.innerText = `Awesome ${username}! You received Headmaster status!`
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 5 && oldScore <= 9) {
             finishedHeadline.innerText = `You finished the game!`;
-            statusLevel.innerText = `Well done ${savedUserName}! You recieved N.E.W.T status!`;
+            statusLevel.innerText = `Well done ${username}! You recieved N.E.W.T status!`;
             finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 1 && oldScore <= 4) {
             finishedHeadline.innerText = `You finished the game!`;
-            statusLevel.innerText = `Back to school ${savedUserName}. You seem like a 3rd year to me`;
+            statusLevel.innerText = `Back to school ${username}. You seem like a 3rd year to me`;
             finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore === 0) {
             finishedHeadline.innerText = `You finished the game!`;
-            statusLevel.innerText = `Well...${savedUserName}, Not much to say "first year".`;
+            statusLevel.innerText = `Well...${username}, Not much to say "first year".`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         }
+        console.log("finished", username);
     }
     stopTimer();
 }
