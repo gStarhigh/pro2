@@ -3,7 +3,7 @@
 ## General information
 ---
 
-This is a Quiz about Harry Potter by J.K Rowling. This is a project for a course in JavaScript for Code Institute by Gustaf Starhög.
+This is a Quiz about Harry Potter by J.K Rowling. This is a project for a course in JavaScript, Project Portfolio 2, for Code Institute by Gustaf Starhög.
 
 The purpose of this website is to promote myself and my skills in Html, CSS & JavaScript. The website is a quiz about Harry Potter with 3 different difficulties to choose from.
 
@@ -43,10 +43,22 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 --- 
 
 ## Project Goals
-
+- Create a website that showcases my skills in HTML, CSS and JavaScript.
+- Create a website that is responsive on all devices.
+- Create a website that is easy to understand.
+- Create a website that shows the rules for the game.
+- Create a website that contains a game for the user to interact with.
+- Create a game that shows no errors.
+- Create a game with multiple choices for the user to choose between.
+- Create a game that displays the users score.
+- Create a game that displays custom messages depending on the score.
 ---
 ## User Stories
-
+- As a user I want to see the rules before the game starts.
+- As a user I want a game that is easy to understand and play.
+- As a user I want to be able to use my own username when playing.
+- As a user I want to be able to play again without having to enter the username again.
+- As a user I want to be able to "go home" from anywhere in the game.
 ---
 
 ## Colors
@@ -60,7 +72,7 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 ---
 
 ## Wireframes (Balsamiq)
-I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes]().
+I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/assets/wireframes).
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
 
 ![Wireframe of the website on a desktop]()
