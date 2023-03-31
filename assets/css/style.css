@@ -247,13 +247,16 @@ html {
     margin-top: 40px;
 }
 
-.finished-headline h3,
-p {
-    margin-top: 40px;
+.finished-headline {
+    font-size: 200%;
+}
+
+.status-level {
+    margin-top: 20px;
 }
 
 .finished-score {
-    padding-top: 80px;
+    margin-top: 40px;
     font-size: 140%;
 }
 
@@ -267,6 +270,7 @@ p {
 
 .play-again-text {
     font-size: 140%;
+    margin-top: 40px;
 }
 
 .play-again-button {

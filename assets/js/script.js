@@ -116,10 +116,12 @@ startBtn.addEventListener("click", function (event) {
         localStorage.setItem("latest-username", JSON.stringify(username)); // Update latest username key
 
         // Update the latest username display element in the DOM
-        document.getElementById("finished-headline").innerText = username;
-        console.log(username);
+        const latestUsername = JSON.parse(localStorage.getItem("latest-username"));
+        statusLevel.innerText = `Current Gamer Tag: ${latestUsername}`;
+        console.log(latestUsername);
     }
 });
+
 
 
 // Get the latest saved username from the separate key in localStorage
