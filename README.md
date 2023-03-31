@@ -59,6 +59,8 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 - As a user I want to be able to use my own username when playing.
 - As a user I want to be able to play again without having to enter the username again.
 - As a user I want to be able to "go home" from anywhere in the game.
+- As a user I want to see how much time I have left for each question.
+- As a user I want to see what the maxscore is while playing.
 ---
 
 ## Colors
