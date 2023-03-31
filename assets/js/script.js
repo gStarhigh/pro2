@@ -20,7 +20,6 @@ const answer4 = document.getElementById("alternative-4");
 const questionText = document.getElementById("question-text");
 const answerButtons = document.getElementsByClassName("alternatives");
 const playAgainButton = document.getElementById("play-again-button");
-const finishedHeadline = document.getElementById("finished-headline");
 const finishedScoreText = document.getElementById("finished-score-text");
 const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
@@ -255,19 +254,15 @@ function checkAnswer(answer) {
         questionsSection.classList.add("hide");
         finishedSection.classList.remove("hide");
         if (oldScore === shuffledQuestions.length) {
-            finishedHeadline.innerText = `You finished the game!`;
             statusLevel.innerText = `Awesome ${username}! You received Headmaster status!`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 5 && oldScore <= 9) {
-            finishedHeadline.innerText = `You finished the game!`;
             statusLevel.innerText = `Well done ${username}! You recieved N.E.W.T status!`;
             finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 1 && oldScore <= 4) {
-            finishedHeadline.innerText = `You finished the game!`;
             statusLevel.innerText = `Back to school ${username}. You seem like a 3rd year to me`;
             finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore === 0) {
-            finishedHeadline.innerText = `You finished the game!`;
             statusLevel.innerText = `Well...${username}, Not much to say "first year".`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         }
