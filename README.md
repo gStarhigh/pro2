@@ -231,9 +231,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
     - Link: (https://www.favicon.cc/?action=icon&file_id=78400) 
 
 ### Fonts:
-- I used google fonts as my main font:
+- I used google fonts "Roboto" as my main font:
     - Link (https://fonts.google.com/)
-
 
 ### Readme.md file:
 - I used the markdown cheat-sheet to help me with the readme.md file.
