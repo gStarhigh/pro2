@@ -126,7 +126,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### HTML
 - W3C - HTML validator: (https://validator.w3.org/)
     - W3C Validator for HTML shows no errors on the index.html file.
-    - The W3C validator for HTML shows 3 warnings. These warnings are due to empty headlines in the HTML file. Line, 113,147,148,149. These headlines are empty because they are targetet with JavaScript to display information depending on the game and the users interaction and therefore have no static headline.
+    - The W3C validator for HTML shows 3 warnings. These warnings are due to empty headlines in the HTML file. Line, 113,148,149. These headlines are empty because they are targetet with JavaScript to display information depending on the game and the users interaction and therefore have no static headline.
         - Line 113: Targets by its ID, "question-text" in the script.js file to present the user with a question that the user shall answer in the game.
         - Line 148: Targets by its ID, "status-level" in the script.js file to present the user with the username the user entered when starting the game, with a custom response depending on what score the user got.
         - Line 149: Targets by its ID, "finished-score-text" in the script.js file to present the user with the amount of correct answers they got out of the total amount of questions that were presented.
