@@ -77,8 +77,7 @@ html {
     border-radius: 20px;
 }
 
-.home-icon,
-.hamburger {
+.home-icon {
     font-size: 180%;
     margin-top: 10px;
     padding: 10px 20px;
@@ -184,7 +183,6 @@ html {
     position: absolute;
     top: 28%;
     left: 48%;
-    background-color: black;
 }
 
 .next-question button {

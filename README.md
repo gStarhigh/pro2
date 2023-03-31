@@ -64,6 +64,21 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 ---
 
 ## Colors
+- Root Colors:
+    - bgr-clr: #444
+    - btn-clr: #eeeeee
+    - txt-clr: Whitesmoke (#F5F5F5)
+    - txt-btn-clr: #333
+    
+- Correct answer background color = Green
+- Correct answer text color = Black
+- Wrong answer background color = Red
+- Wrong answer text color = (#F5F5F5)
+- Text Color = #444 + (#F5F5F5) + #eeeeee
+- Button Background color: #444
+- Background color for the Game: #444 with 0.9 opacity.
+- Home icon color : (#F5F5F5)
+- Navigation buttons text color: #333
 
 --- 
 
