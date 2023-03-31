@@ -126,6 +126,12 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### HTML
 - W3C - HTML validator: (https://validator.w3.org/)
     - W3C Validator for HTML shows no errors on the index.html file.
+    - The W3C validator for HTML shows 4 warnings. These warnings are due to empty headlines in the HTML file. Line, 113,147,148,149. These headlines are empty because they are targetet with JavaScript to display information depending on the game and the users interaction and therefore have no static headline.
+        - Line 113: Targets by its ID, "question-text" in the script.js file to present the user with a question that the user shall answer in the game.
+        - Line 147: Targets by its ID, "finished-headline" in the script.js file to present the user with a greeting when they have finished the game.
+        - Line 148: Targets by its ID, "status-level" in the script.js file to present the user with the username the user entered when starting the game, with a custom response depending on what score the user got.
+        - Line 149: Targets by its ID, "finished-score-text" in the script.js file to present the user with the amount of correct answers they got out of the total amount of questions that were presented.
+![Image of the HTML validation](/assets/images/html-validation.JPG)
 
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
@@ -137,6 +143,12 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### JavaScript
 - Jshint: (https://jshint.com/)
     - Jshint validator shows now errors in any Javascript file.
+- Questions.js:
+    - The Jshint validator shows when questions.js are tested that there are 3 unused variables. This refers to the Lines 1, 83 and 165 in the questions.js file. These variables are defined in another js file, the script.js. This is why this information is presented by jshint.com The variables can be found on line 163, 166 and 169 in the script.js file.
+![Image of Jshint validation of the questions.js file](/assets/images/jshint-java-questions.JPG)
+- Script.js:
+    -  The Jshint validator shows when script.js are tested that there are 3 undefined variables. This refers to the lines: 163, 166 and 169 in the questions.js file. These variables are defined in another js file, the question.js. This is why this information is presented by jshint.com. The variables can be found on lines 1, 83 and 165 in the question.js file.
+![Image of Jshint validation of the script.js file](/assets/images/jshint-java-script.JPG)
 
 ## Testing on different browsers
 - The website is tested on different devices. The website is responsive on all tested devices. 
