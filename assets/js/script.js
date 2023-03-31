@@ -149,6 +149,7 @@ playAgainButton.addEventListener("click", function () {
     finishedSection.classList.add("hide");
     difficultySection.classList.remove("hide");
     questionsAnswered = 0;
+    oldScore = 0;
     document.getElementById("correct-score-amount").innerText = 0;
 });
 
