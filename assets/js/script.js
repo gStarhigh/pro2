@@ -26,7 +26,6 @@ const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 const statusLevel = document.getElementById("status-level");
 
-
 // Let variables that can be reassigned
 let currentQuestionIndex; // Keeps track of the index of the current question being asked
 let shuffledQuestions; // Stores the questions in a shuffled order
@@ -35,7 +34,6 @@ let questionsAnswered = 0; // Keeps track of the number of questions answered
 let oldScore = 0; // Stores the score from previous questions
 let timeLeft = 15; // Stores the remaining time for answering a question
 let timer; // Used to track the countdown timer
-
 
 // Timer functions
 /**
@@ -75,13 +73,11 @@ function stopTimer() {
     clearInterval(timer);
 }
 
-
 /**
  * When the page is loaded, the username input has focus and the user can start to type
  * in their username without having to click in the input box.
  */
 document.getElementById("username").focus();
-
 
 /**
  * When the page is loaded, adds the hide class to all sections and removes it, if there is one,
@@ -92,7 +88,6 @@ questionsSection.classList.add("hide");
 finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
 welcomeSection.classList.remove("hide");
-
 
 /**
  * Listens after a click from the user on the start button, checks so the username is not empty,
@@ -116,13 +111,10 @@ startBtn.addEventListener("click", function (event) {
     }
 });
 
-
-
 // Listens for a submit event on the username form, but does not perform any action
 usernameForm.addEventListener("submit", function (event) {
     event.preventDefault();
 });
-
 
 /**
  * Listens for a click on the "To Difficulty" button, and removes the hide element from the
@@ -135,7 +127,6 @@ toDiffbutton.addEventListener("click", function (event) {
     rulesSection.classList.add("hide");
 });
 
-
 // Game Section
 // Event listeners for the difficulties
 easyButton.addEventListener("click", function () {
@@ -147,7 +138,6 @@ mediumButton.addEventListener("click", function () {
 hardButton.addEventListener("click", function () {
     runGame("hard");
 });
-
 
 // Next question button event listener
 nextQuestionButton.addEventListener("click", () => {
@@ -218,7 +208,6 @@ function showQuestion(questions) {
     answer4.setAttribute("data-answer", "d");
 }
 
-
 /**
  * When the user clicks an answer, it checks what button was clicked and uses that information in the
  * checkAnswer function
@@ -236,11 +225,10 @@ answer4.addEventListener("click", function () {
     checkAnswer("d");
 });
 
-
 /**
  * Checks if the user clicked the correct answer and then disables the buttons so they cannot change answer.
- * Then shows the next question button and depending on if the user got it right, increases the correct or wrong
- * answers counter.
+ * Then shows the next question button and depending on if the user got it right, increases the correct
+ * answers counter. Depending on how many correct answers the user gets, it displays different text for the user.
  */
 function checkAnswer(answer) {
     if (isDisabled) {
@@ -289,7 +277,6 @@ function checkAnswer(answer) {
     stopTimer();
 }
 
-
 /**
  * Get the current score from the dom and increment it by 1
  */
@@ -297,7 +284,6 @@ function incrementScore() {
     oldScore = parseInt(document.getElementById("correct-score-amount").innerText);
     document.getElementById("correct-score-amount").innerText = ++oldScore;
 }
-
 
 /**
  * Resets the quiz, adds the Hide element to the next button and
