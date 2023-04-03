@@ -141,7 +141,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ### JavaScript
 - Jshint: (https://jshint.com/)
-    - Jshint validator shows now errors in any Javascript file.
+    - Jshint validator shows no errors in any Javascript file.
 - Questions.js:
     - The Jshint validator shows when questions.js are tested that there are 3 unused variables. This refers to the Lines 1, 83 and 165 in the questions.js file. These variables are defined in another js file, the script.js. This is why this information is presented by jshint.com The variables can be found on line 163, 166 and 169 in the script.js file.
 ![Image of Jshint validation of the questions.js file](/assets/images/jshint-java-questions.JPG)
