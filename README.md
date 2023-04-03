@@ -219,7 +219,10 @@ The wireframes should not be considered finished product, but as a tool I used a
 ## Final Result
 
 ### Below is captured screenshots of the website on Desktop:
-
+<details>
+<summary>Screenshot of Home page</summary>
+<img src"assets/images/index-ps-desktop.png" width="700">
+</details>
 
 
 ### Below is captured screenshots of the website on a phone sized screen (put together in balsamiq to be able to show all next to each other):
