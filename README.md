@@ -173,6 +173,10 @@ The wireframes should not be considered finished product, but as a tool I used a
 - Below that is the score shown for the user,"You got "x" out of 10 correct answers".
 - Below that is a question that asks the user if they want to play again.
 - At the bottom of the page is a button that says "Play again". If the user presses this button, the difficulty section is shown again. When you play again, if you press the play again button, you dont want to enter the username one more time. This is why I chose to not go back to the start, the user has already a username, the user has read the rules but what the user might want to change is the difficulty. This is why the play again button takes you back to the difficulty section.
+
+- Logic
+    - When the game is over, the user has an option to play again. An eventlistener listens for the user to click the playagain button. If the user does so, it adds the hide class to the finished section, and removes it from the difficulty section, so that the user can, if they want, choose a different difficulty.
+    The score and the amount of questions asked, are set to 0. The user still has the same username and is not required to enter that again.
 <details>
 <summary>Screenshot of Finished page with 10 correct answers</summary>
 <img src="assets/images/10-correct-answers.png">
