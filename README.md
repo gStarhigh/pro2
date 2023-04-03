@@ -134,6 +134,12 @@ The wireframes should not be considered finished product, but as a tool I used a
     - When the user has answered all questions, or if the time has run out on all questions, the game is over and the game will show the finished section.
 
 ### Finished Section
+- When the user arrives to the finished section, the game is over and the user has gone through all 10 questions in the chosen difficulty. 
+- There is a congratulatory message that explains that the user has finished the game.
+- Depending on the score that the user got, different messages are displayed, along with the username that the user chose in the beginning of the game. 
+- Below that is the score shown for the user,"You got "x" out of 10 correct answers".
+- Below that is a question that asks the user if they want to play again.
+- At the bottom of the page is a button that says "Play again". If the user presses this button, the difficulty section is shown again. When you play again, if you press the play again button, you dont want to enter the username one more time. This is why I chose to not go back to the start, the user has already a username, the user has read the rules but what the user might want to change is the difficulty. This is why the play again button takes you back to the difficulty section.
 
 --- 
 
