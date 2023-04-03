@@ -202,7 +202,10 @@ The wireframes should not be considered finished product, but as a tool I used a
         - Line 113: Targets by its ID, "question-text" in the script.js file to present the user with a question that the user shall answer in the game.
         - Line 148: Targets by its ID, "status-level" in the script.js file to present the user with the username the user entered when starting the game, with a custom response depending on what score the user got.
         - Line 149: Targets by its ID, "finished-score-text" in the script.js file to present the user with the amount of correct answers they got out of the total amount of questions that were presented.
-![Image of the HTML validation](/assets/images/html-validation.JPG)
+<details>
+<summary>Image of the HTML validation</summary>
+<img src="assets/images/html-validation.JPG">
+</details>
 
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
