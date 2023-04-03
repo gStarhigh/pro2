@@ -119,6 +119,9 @@ The wireframes should not be considered finished product, but as a tool I used a
 - After the user has read through the rules and the information about the levels, the user clicks the "Choose difficulty" button that takes the user further in the game process.
 
 ### Difficulty Section
+- When the user arrives to the difficulty section the user are greeted with a headline that explains that "you are about to embark into the Harry Potter World" and that you should choose your difficulty wisely.
+- You have 3 different difficulties to choose from: Easy, Medium or Hard. 
+- Depending on what the user chooses, different questions will be loaded to match the difficulty.
 
 ### Game Section
 
