@@ -145,7 +145,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 ## Testing
 ### Links, Images, Icons and Buttons:
 #### Links:
-- All the links are working an will take you to the correct page.
+- All the links are working and will take you to the correct page.
 #### Icons:
 - All the internal links are working and will take you to the correct page. 
 #### Buttons:
