@@ -131,6 +131,8 @@ The wireframes should not be considered finished product, but as a tool I used a
     - There is only 1 correct answer.
     - Depending on what score you get,you can acchieve 4 different status levels ranked from high to low: Headmaster, N.E.W.T, 3rd year & first year. 
 - After the user has read through the rules and the information about the levels, the user clicks the "Choose difficulty" button that takes the user further in the game process.
+- Logic:
+    - When the user clicks the "Choose difficulty" button, an eventlistener in the script.js file removes the "hide" class from the difficulty section, and adds it to the rules section, thus displaying the question section of the index.html file. 
 <details>
 <summary>Screenshot of Rules page</summary>
 <img src="assets/images/rules-ps-desktop.png">
