@@ -109,9 +109,14 @@ The wireframes should not be considered finished product, but as a tool I used a
 - When you enter the site you are greeted with the home page. At the top left corner, of all pages, is a Home icon, that takes you back to the home section from anywhere in the game. 
 - The username input is focused so the user can input their username on a computer without having to click the input first. 
 - If the user fails to enter a username and tries to click the button to start the game, a error message will appear telling the user that a username is mandatory to proceed.
-- When the user have entered a username and clicks the "Alohomora" button, the game proceeds to show the rules of the game. 
+- When the user have entered a username and clicks the "Alohomora" button, the game proceeds to show the rules of the game. Alohomora is the spell in Harry Potter that is used to unlock doors.
 
 ### Rules Section
+- Before the user can start to play, the rules are shown for the user. It explains that:
+    - The user has a 15 second timer to answer each question. 
+    - There is only 1 correct answer.
+    - Depending on what score you get,you can acchieve 4 different status levels ranked from high to low: Headmaster, N.E.W.T, 3rd year & first year. 
+- After the user has read through the rules and the information about the levels, the user clicks the "Choose difficulty" button that takes the user further in the game process.
 
 ### Difficulty Section
 
