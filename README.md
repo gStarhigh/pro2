@@ -117,6 +117,9 @@ The wireframes should not be considered finished product, but as a tool I used a
 - The username input is focused so the user can input their username on a computer without having to click the input first. 
 - If the user fails to enter a username and tries to click the button to start the game, a error message will appear telling the user that a username is mandatory to proceed.
 - When the user have entered a username and clicks the "Alohomora" button, the game proceeds to show the rules of the game. Alohomora is the spell in Harry Potter that is used to unlock doors.
+- Logic:
+    - When the site is loaded, a class of "hide" is added to the difficulty/questions/finished & rules sections and removes it from the welcome section. The class of hide is targeted in the style.css file and adds a display of none to the sections that has the class. 
+    - When the user clicks the "Alohomora" button, an eventlistener in the script.js file removes the "hide" class from the rules section, and adds it to the welcome section, thus displaying the rules section of the index.html file. 
 <details>
 <summary>Screenshot of Home page</summary>
 <img src="assets/images/index-ps-desktop.png">
