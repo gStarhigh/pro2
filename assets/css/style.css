@@ -419,4 +419,8 @@ html {
         height: 50px;
         margin: 5px 40px;
     }
+
+    .play-again {
+        top: 80%;
+    }
 }
