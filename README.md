@@ -209,8 +209,8 @@ The wireframes should not be considered finished product, but as a tool I used a
 ## Testing tools used
 - I have tested the site in Chrome Dev tools. 
 - I have tested the site using Lighthouse in Chrome Dev Tools, for both Mobile and Desktop. Results can be found below:
-![Desktop](/assets/images/lighthouse-desktop.JPG)
-![Mobile](/assets/images/lighthouse-mobile.JPG)
+- ![Desktop](/assets/images/lighthouse-desktop.JPG)
+- ![Mobile](/assets/images/lighthouse-mobile.JPG)
 ---
 
 ## Commit history
