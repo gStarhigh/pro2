@@ -97,9 +97,16 @@ The wireframes should not be considered finished product, but as a tool I used a
 ---
 
 ## General features
+- The website was created with the idea of making a Harry Potter game that the user could interact with and choose different ways to play in form of difficulty levels and using their own username. 
+- The game provides 10 questions for each difficulty level that are displayed depending on what difficulty the user chooses. 
+- The game keeps track of the users correct answers and displays them when the user has answered all 10 questions.
 - The website is responsive on all devices.
 
 ### Home Section
+- When you enter the site you are greeted with the home page. At the top left corner, of all pages, is a Home icon, that takes you back to the home section from anywhere in the game. 
+- The username input is focused so the user can input their username on a computer without having to click the input first. 
+- If the user fails to enter a username and tries to click the button to start the game, a error message will appear telling the user that a username is mandatory to proceed.
+- When the user have entered a username and clicks the "Alohomora" button, the game proceeds to show the rules of the game. 
 
 ### Rules Section
 
