@@ -166,7 +166,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
     - W3C Validator for CSS shows no errors in the style.css file.
-    - The W3C Validator shows a warning "Imported style sheets are not checked in direct input and file upload modes" - This means that the validator have check all CSS code but it cannot check the imported url, in this case it refers to the googlefonts import url. 
+    - The W3C Validator shows a warning "Imported style sheets are not checked in direct input and file upload modes" - This means that the validator have checked all CSS code but it cannot check the imported url, in this case it refers to the googlefonts import url. 
 ![Image of the Validation](/assets/images/jigsaw-validation.JPG)
 ![Image of the shown error](/assets/images/jigsaw-warning.JPG)
 
