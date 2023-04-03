@@ -221,7 +221,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### Below is captured screenshots of the website on Desktop:
 <details>
 <summary>Screenshot of Home page</summary>
-<img src"assets/images/index-ps-desktop.png" width="700">
+<img src="assets/images/index-ps-desktop.png">
 </details>
 
 
