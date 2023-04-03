@@ -91,8 +91,14 @@ Image of the website on a desktop:
 I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/assets/wireframes).
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
 
-![Wireframe of the website on a desktop](/assets/wireframes/welcome-section.JPG)
-![Wireframe of the website on a phone](/assets/wireframes/welcome-phone.JPG)
+<details>
+<summary>Wireframe of the website on a desktop</summary>
+<img src="assets/wireframes/welcome-section.JPG">
+</details>
+<details>
+<summary>Wireframe of the website on a mobile device</summary>
+<img src="assets/wireframes/welcome-phone.JPG">
+</details>
 ---
 
 ## General features
