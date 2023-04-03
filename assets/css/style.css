@@ -395,3 +395,28 @@ html {
         top: 90%;
     }
 }
+
+/*Media queries for screens under 900px*/
+@media only screen and (max-width: 400px) {
+
+    .rules-list {
+        font-size: 80%;
+    }
+
+    .difficulty-buttons {
+        margin-top: 10%;
+    }
+
+    .question {
+        margin-top: 5%;
+    }
+
+    .alternative-box {
+        top: 55%;
+    }
+
+    .alternatives {
+        height: 50px;
+        margin: 5px 40px;
+    }
+}
