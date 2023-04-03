@@ -124,6 +124,14 @@ The wireframes should not be considered finished product, but as a tool I used a
 - Depending on what the user chooses, different questions will be loaded to match the difficulty.
 
 ### Game Section
+- Now the user has arrived at the game. Depending on the difficulty level the user has chosen, different questions will load into the game. 
+- Game discription:
+    - At the top of the game the question is displayed.
+    - Below the question there is 4 different answers that the user can choose from. There is only 1 correct answer. 
+    - At the bottom left of the game, there is an hourglass icon and next to it the time left is displayed. If the timer reaches 5seconds, the color of the time becomes red to indicate that the time is about to run out. 
+    - At the bottom right there is a score tracker. Whenever a user clicks the correct answer, it increases by 1. There is 10 questions, so the max score is 10 that the user can get. 
+    - The questions are shown randomly and does not show in the same order if you replay the game.
+    - When the user has answered all questions, or if the time has run out on all questions, the game is over and the game will show the finished section.
 
 ### Finished Section
 
