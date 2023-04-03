@@ -10,8 +10,8 @@ The purpose of this website is to promote myself and my skills in Html, CSS & Ja
 
 Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 
-
-![]()
+Image of the website on a desktop:
+![Finished website Desktop](/assets/images/index-ps-desktop.png)
 
 ## Table of Contents
 ---
@@ -79,7 +79,6 @@ Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 - Background color for the Game: #444 with 0.9 opacity.
 - Home icon color : (#F5F5F5)
 - Navigation buttons text color: #333
-
 --- 
 
 ## Typography
