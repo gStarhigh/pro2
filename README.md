@@ -160,6 +160,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 ## Device testing on different devices
 - The site has been tested through Chrome Dev tools for responsivness. The site is responsive on all sizes.
 - Simulation test with devices: (the site is responsive and works on all simulated devices)
+    - iPhone 6/7/8/12
     - iPhone 6/7/8 Plus
     - iPhone X
     - iPhone XR
@@ -174,13 +175,12 @@ The wireframes should not be considered finished product, but as a tool I used a
     - Laptop
     - PC
 
-
 ## Testing tools used
 - I have tested the site in Chrome Dev tools. 
 - I have tested the site using Lighthouse in Chrome Dev Tools, for both Mobile and Desktop. Results can be found below:
 ![Desktop](/assets/images/lighthouse-desktop.JPG)
 ![Mobile](/assets/images/lighthouse-mobile.JPG)
-
+---
 
 ## Commit history
 - The commit history for this website can be found on Github: (https://github.com/gStarhigh/pro2/commits/main)
@@ -222,9 +222,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ## Credits
 
 ### Images:
-- The  background images is from:
-/* Image credit: https://www.wallpaperflare.com/
-    - link (https://www.wallpaperflare.com/brown-and-green-floral-wall-decor-slytherin-sonserina-harry-potter-wallpaper-phfmf)
+- The  background images is from: https://www.wallpaperflare.com/
+    - Link (https://www.wallpaperflare.com/brown-and-green-floral-wall-decor-slytherin-sonserina-harry-potter-wallpaper-phfmf)
 
 ### Title Icon:
 - Icon credit, Favicon.
