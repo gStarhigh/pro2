@@ -7,7 +7,7 @@ This is a Quiz about Harry Potter by J.K Rowling. This is a project for a course
 
 The purpose of this website is to promote myself and my skills in Html, CSS & JavaScript. The website is a quiz about Harry Potter with 3 different difficulties to choose from.
 
-The entire game is built upon 1 HTML file, where the sections within this file are shown wheter or not they have the class of "hide". This is decided through JavaScript with eventlisteners depending on what the user click on. 
+The entire game is built upon 1 HTML file, where the sections within this file are shown whether or not they have the class of "hide". This is decided through JavaScript with eventlisteners depending on what the user click on. 
 When the site is loaded, the class of "hide" is removed from the "welcome-game-area" and added to all other sections of the page. 
 
 Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
