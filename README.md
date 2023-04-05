@@ -108,6 +108,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 - The game provides 10 questions for each difficulty level that are displayed depending on what difficulty the user chooses. 
 - The game keeps track of the users correct answers and displays them when the user has answered all 10 questions.
 - There is a timer displayed when the user has started to play that counts down from 15seconds. If the user fails to click an answer before the timer runs out, the buttons disables and the correct answer is displayed. The user can no longer choose an answer.
+- If the time of the countdown is 5seconds or lower, the color of the hourglass and the time turns to red. 
 - If a user clicks an answer before the timer has run out, the timer is stopped and, if the user answered correctly, the score is increased in the bottom right. 
 - When either the user has chosen an answer, or the time has run out, the next question button "arrow" will appear that will load the next question for the user when clicked, removes the disabled attribute on the buttons and lets the user answer the next question. The countdown is also reset.
 - The website is responsive on all devices.
