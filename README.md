@@ -192,6 +192,14 @@ The wireframes should not be considered finished product, but as a tool I used a
 #### Buttons:
 - All the buttons are working and will take you to the correct page.
 - All buttons do what they are supposed to do by the users interaction.
+### Game logic:
+- All questions in the chosen difficulty displays randomly each time.
+- The countdown resets as it should when the player moves to the next question.
+- The timer stops when the user has chosen an answer.
+- The score increments by 1 if the user has clicked the correct answer.
+- The score does not increment if the user has clicked the wrong answer.
+- The Score does not increment if the timer reaches 0.
+- The timer color gets red when the timer is at 5 seconds or lower. 
 --- 
 ## Code validation
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
