@@ -24,6 +24,7 @@ const finishedScoreText = document.getElementById("finished-score-text");
 const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 const statusLevel = document.getElementById("status-level");
+const hourglass = document.getElementById("time-left");
 
 // Let variables that can be reassigned
 let currentQuestionIndex; // Keeps track of the index of the current question being asked
@@ -45,9 +46,9 @@ function startTimer() {
         countdown();
         timeLeftText.innerText = timeLeft;
         if (timeLeft < 6) {
-            timeLeftText.style.color = "red";
+            hourglass.style.color = "red";
         } else {
-            timeLeftText.style.color = "white";
+            hourglass.style.color = "white";
         }
     }, 1000);
 }
