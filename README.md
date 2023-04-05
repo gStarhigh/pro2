@@ -1,4 +1,4 @@
-# HTML & CSS Project for Code Institute
+# JavaScript with HTML & CSS Project for Code Institute
 
 ## General information
 ---
