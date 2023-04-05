@@ -323,8 +323,43 @@ The wireframes should not be considered finished product, but as a tool I used a
 </details>
 
 
-### Below is captured screenshots of the website on a phone sized screen (put together in balsamiq to be able to show all next to each other):
-
+### Below is captured screenshots of the website on a phone sized screen:
+<details>
+<summary>Screenshot of Home page</summary>
+<img src="assets/images/index-ps-phone.png">
+</details>
+<details>
+<summary>Screenshot of Rules page</summary>
+<img src="assets/images/rules-ps-phone.png">
+</details>
+<details>
+<summary>Screenshot of Difficulty page</summary>
+<img src="assets/images/difficulties-ps-phone.png">
+</details>
+<details>
+<summary>Screenshot of Questions page</summary>
+<img src="assets/images/questions-ps-phone.png">
+</details>
+<details>
+<summary>Screenshot of Questions timedout</summary>
+<img src="assets/images/questions-timeout-ps-phone.png">
+</details>
+<details>
+<summary>Screenshot of Finished page with 0 correct answers</summary>
+<img src="assets/images/0-correct-answers-phone.png">
+</details>
+<details>
+<summary>Screenshot of Finished page with 1-4 correct answers</summary>
+<img src="assets/images/1-4-correct-answers-phone.png">
+</details>
+<details>
+<summary>Screenshot of Finished page with 5-9 correct answers</summary>
+<img src="assets/images/5-9-correct-answers-phone.png">
+</details>
+<details>
+<summary>Screenshot of Finished page with 10 correct answers</summary>
+<img src="assets/images/10-correct-answers-phone.png">
+</details>
 
 ---
 ## Deployment
