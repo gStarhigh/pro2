@@ -159,7 +159,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     - At the bottom right there is a score tracker. Whenever a user clicks the correct answer, it increases by 1. There is 10 questions, so the max score is 10 that the user can get. 
     - The questions are shown randomly and does not show in the same order if you replay the game.
     - When the user has answered all questions, or if the time has run out on all questions, the game is over and the game will show the finished section.
-    - Logic:
+- Logic:
     - When all 10 questions of the quiz have been asked to the user, the hide class gets added to the questions section and removes it from the finished section thus displaying the finished sections information.
 <details>
 <summary>Screenshot of Questions page</summary>
