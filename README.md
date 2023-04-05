@@ -193,13 +193,20 @@ The wireframes should not be considered finished product, but as a tool I used a
 - All the buttons are working and will take you to the correct page.
 - All buttons do what they are supposed to do by the users interaction.
 ### Game logic:
+- The questions load correctly depending on the difficulty chosen by the user.
 - All questions in the chosen difficulty displays randomly each time.
-- The countdown resets as it should when the player moves to the next question.
-- The timer stops when the user has chosen an answer.
 - The score increments by 1 if the user has clicked the correct answer.
 - The score does not increment if the user has clicked the wrong answer.
 - The Score does not increment if the timer reaches 0.
+- The timer stops when the user has chosen an answer.
+- The countdown resets as it should when the player moves to the next question.
 - The timer color gets red when the timer is at 5 seconds or lower. 
+- The user cannot play without a username. 
+- The play again button does not reset the username.
+- The buttons gets disabled when the timer reaches 0, and the user cannot answer.
+- The buttons gets disabled when the user has clicked an answer.
+- The buttons gets enabled when the user clicks the next question button.
+
 --- 
 ## Code validation
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
