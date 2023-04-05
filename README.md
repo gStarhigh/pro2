@@ -202,11 +202,12 @@ The wireframes should not be considered finished product, but as a tool I used a
 - The countdown resets as it should when the player moves to the next question.
 - The timer color gets red when the timer is at 5 seconds or lower. 
 - The user cannot play without a username. 
-- The play again button does not reset the username.
 - The buttons gets disabled when the timer reaches 0, and the user cannot answer.
 - The buttons gets disabled when the user has clicked an answer.
 - The buttons gets enabled when the user clicks the next question button.
-
+- The correct message gets displayed when the game is finished according to the amount of correct answers the user got. 
+- The play again button does not reset the username.
+- The play again button resets the questions and the score. 
 --- 
 ## Code validation
 - All code on the site has been validated, HTML,CSS & JavaScript, by use of the W3C validator and Jshint. 
