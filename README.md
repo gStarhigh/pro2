@@ -201,7 +201,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 - The Score does not increment if the timer reaches 0.
 - The timer stops when the user has chosen an answer.
 - The countdown resets as it should when the player moves to the next question.
-- The timer color gets red when the timer is at 5 seconds or lower. 
+- The timer and hourglass color gets red when the timer is at 5 seconds or lower. 
 - The user cannot play without a username. 
 - The buttons gets disabled when the timer reaches 0, and the user cannot answer.
 - The buttons gets disabled when the user has clicked an answer.
