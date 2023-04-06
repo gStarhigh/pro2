@@ -23,5 +23,14 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "The Best Theme",
    "terminal.integrated.gpuAcceleration": "canvas",
-   "editor.defaultFormatter": "HookyQR.beautify"
+"editor.defaultFormatter": "HookyQR.beautify",
+"[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+},
+"[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+},
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+}
 }
