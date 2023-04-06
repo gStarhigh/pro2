@@ -34,7 +34,7 @@ let questionsAnswered = 0; // Keeps track of the number of questions answered
 let oldScore = 0; // Stores the score from previous questions
 let timeLeft = 15; // Stores the remaining time for answering a question
 let timer; // Used to track the countdown timer
-
+console.log(test);
 // Timer functions
 /**
  * Starts the timer with 20seconds on the clock. If there is less than 5seconds remaining the
