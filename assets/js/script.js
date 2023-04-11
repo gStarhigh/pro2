@@ -259,10 +259,10 @@ function checkAnswer(answer) {
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 5 && oldScore <= 9) {
             statusLevel.innerText = `Well done ${username}! You recieved N.E.W.T status!`;
-            finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+            finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore >= 1 && oldScore <= 4) {
             statusLevel.innerText = `Back to school ${username}. You seem like a 3rd year to me`;
-            finishedScoreText.innerText = ` You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
+            finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
         } else if (oldScore === 0) {
             statusLevel.innerText = `Well...${username}, Not much to say "first year".`;
             finishedScoreText.innerText = `You got ${oldScore} out of ${shuffledQuestions.length} correct answers!`;
