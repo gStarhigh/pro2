@@ -203,10 +203,7 @@ function showQuestion(questions) {
     answer4.setAttribute("data-answer", "d");
 }
 
-/**
- * When the user clicks an answer, it checks what button was clicked and uses that information in the
- * checkAnswer function
- */
+// When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
 answer1.addEventListener("click", function () {
     checkAnswer("a");
 });
