@@ -46,6 +46,22 @@ finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
 welcomeSection.classList.remove("hide");
 
+// When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
+answer1.addEventListener("click", function () {
+    checkAnswer("a");
+});
+answer2.addEventListener("click", function () {
+    checkAnswer("b");
+});
+answer3.addEventListener("click", function () {
+    checkAnswer("c");
+});
+answer4.addEventListener("click", function () {
+    checkAnswer("d");
+});
+
+
+// Functions
 
 // Timer functions
 /**
@@ -202,20 +218,6 @@ function showQuestion(questions) {
     answer4.innerHTML = questions.d;
     answer4.setAttribute("data-answer", "d");
 }
-
-// When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
-answer1.addEventListener("click", function () {
-    checkAnswer("a");
-});
-answer2.addEventListener("click", function () {
-    checkAnswer("b");
-});
-answer3.addEventListener("click", function () {
-    checkAnswer("c");
-});
-answer4.addEventListener("click", function () {
-    checkAnswer("d");
-});
 
 /**
  * Checks if the user clicked the correct answer and then disables the buttons so they cannot change answer.
