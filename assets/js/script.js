@@ -46,6 +46,7 @@ finishedSection.classList.add("hide");
 rulesSection.classList.add("hide");
 welcomeSection.classList.remove("hide");
 
+// Eventlisteners
 // When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
 answer1.addEventListener("click", function () {
     checkAnswer("a");
@@ -60,6 +61,35 @@ answer4.addEventListener("click", function () {
     checkAnswer("d");
 });
 
+// Listens for a submit event on the username form, but does not perform any action
+usernameForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+});
+
+// Listens for a click on the "To Difficulty" button, and removes the hide element from the difficulty section and adds it to the rules section.
+toDiffbutton.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    difficultySection.classList.remove("hide");
+    rulesSection.classList.add("hide");
+});
+
+// Event listeners for the difficulties
+easyButton.addEventListener("click", function () {
+    runGame("easy");
+});
+mediumButton.addEventListener("click", function () {
+    runGame("medium");
+});
+hardButton.addEventListener("click", function () {
+    runGame("hard");
+});
+
+// Next question button event listener
+nextQuestionButton.addEventListener("click", () => {
+    currentQuestionIndex++;
+    setNextQuestion();
+});
 
 // Functions
 
@@ -122,39 +152,7 @@ startBtn.addEventListener("click", function (event) {
     }
 });
 
-// Listens for a submit event on the username form, but does not perform any action
-usernameForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-});
-
-/**
- * Listens for a click on the "To Difficulty" button, and removes the hide element from the
- * difficulty section and adds it to the rules section.
- */
-toDiffbutton.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    difficultySection.classList.remove("hide");
-    rulesSection.classList.add("hide");
-});
-
 // Game Section
-// Event listeners for the difficulties
-easyButton.addEventListener("click", function () {
-    runGame("easy");
-});
-mediumButton.addEventListener("click", function () {
-    runGame("medium");
-});
-hardButton.addEventListener("click", function () {
-    runGame("hard");
-});
-
-// Next question button event listener
-nextQuestionButton.addEventListener("click", () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-});
 
 /**
  * When the user clicks the Play Again button, it hides the finished section and displays the difficulties section.
