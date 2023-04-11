@@ -35,6 +35,18 @@ let oldScore = 0; // Stores the score from previous questions
 let timeLeft = 15; // Stores the remaining time for answering a question
 let timer; // Used to track the countdown timer
 
+
+// When the page is loaded, the username input has focus and the user can start to type in their username without having to click in the input box.
+document.getElementById("username").focus();
+
+// When the page is loaded, adds the hide class to all sections and removes it, if there is one, on the welcome section.
+difficultySection.classList.add("hide");
+questionsSection.classList.add("hide");
+finishedSection.classList.add("hide");
+rulesSection.classList.add("hide");
+welcomeSection.classList.remove("hide");
+
+
 // Timer functions
 /**
  * Starts the timer with 15seconds on the clock. If there is less than 5seconds remaining the
@@ -72,17 +84,6 @@ function countdown() {
 function stopTimer() {
     clearInterval(timer);
 }
-
-
-// When the page is loaded, the username input has focus and the user can start to type in their username without having to click in the input box.
-document.getElementById("username").focus();
-
-// When the page is loaded, adds the hide class to all sections and removes it, if there is one, on the welcome section.
-difficultySection.classList.add("hide");
-questionsSection.classList.add("hide");
-finishedSection.classList.add("hide");
-rulesSection.classList.add("hide");
-welcomeSection.classList.remove("hide");
 
 /**
  * Listens after a click from the user on the start button, checks so the username is not empty,
