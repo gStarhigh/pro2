@@ -204,7 +204,10 @@ function setNextQuestion() {
     }
 }
 
-// Shows the question and the alternatives in the correct buttons, also stores the data answer for each button.
+/**
+ * Shows the question and the alternatives in the correct buttons
+ * also stores the data answer for each button.
+*/
 function showQuestion(questions) {
     questionText.innerHTML = questions.question;
     answer1.innerHTML = questions.a;
