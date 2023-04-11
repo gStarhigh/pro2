@@ -37,7 +37,7 @@ let timer; // Used to track the countdown timer
 
 // Timer functions
 /**
- * Starts the timer with 20seconds on the clock. If there is less than 5seconds remaining the
+ * Starts the timer with 15seconds on the clock. If there is less than 5seconds remaining the
  * color of the timer gets Red, otherwise it's white.
  */
 function startTimer() {
