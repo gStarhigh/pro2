@@ -73,16 +73,11 @@ function stopTimer() {
     clearInterval(timer);
 }
 
-/**
- * When the page is loaded, the username input has focus and the user can start to type
- * in their username without having to click in the input box.
- */
+
+// When the page is loaded, the username input has focus and the user can start to type in their username without having to click in the input box.
 document.getElementById("username").focus();
 
-/**
- * When the page is loaded, adds the hide class to all sections and removes it, if there is one,
- * on the welcome section.
- */
+// When the page is loaded, adds the hide class to all sections and removes it, if there is one, on the welcome section.
 difficultySection.classList.add("hide");
 questionsSection.classList.add("hide");
 finishedSection.classList.add("hide");
