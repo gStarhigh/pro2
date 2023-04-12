@@ -351,6 +351,8 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Finished Section | Finished the game | If the user got 1-4 correct answer a custom message should appear | The custom message did appear |
 | Finished Section | Finished the game | If the user got 5-9 correct answer a custom message should appear | The custom message did appear |
 | Finished Section | Finished the game | If the user got 10 correct answer a custom message should appear | The custom message did appear |
+| Finished Section | Click the Play Again button | The difficulty page should appear | The difficulty page appeared |
+| Finished Section | Playing again | The username should be saved and appear again | The username was saved and appeared again |
 | Finished section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 6.
 
