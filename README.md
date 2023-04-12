@@ -333,6 +333,11 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Game Section | Click the correct answer | The correct answer should turn Green | The correct answer turned Green |
 | Game Section | Click the correct answer | The wrong answers should turn Red | The wrong answers turned Red |
 | Game Section | Click the correct answer | The score should increment by 1 | The score incremented by 1 |
+| Game Section | When the timer reaches 5s | The hourglass and the time left should turn Red | The hourglass and the time left turned Red |
+| Game Section | When the timer reaches 0s | The answer buttons should not be clickable and the next question arrow should appear | The answer buttons were not clickable and the next question arrow did appear |
+| Game Section | Click the next question arrow | The timer should reset to 15s | The timer did reset to 15s |
+| Game Section | Click the next question arrow | The color of the countdown should not be Red | The color of the countdown was not Red |
+| Game Section | Click the next question arrow | The buttons should not be disabled anymore | The buttons were not disabled |
 
 5.
 
