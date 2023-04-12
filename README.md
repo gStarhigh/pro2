@@ -354,15 +354,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Finished Section | Click the Play Again button | The difficulty page should appear | The difficulty page appeared |
 | Finished Section | Playing again | The username should be saved and appear again | The username was saved and appeared again |
 | Finished section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
-6.
 
-7.
-
-8.
-
-9.
-
-10.
 ---
 
 ## Room for improvement
