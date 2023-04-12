@@ -355,6 +355,12 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Finished Section | Playing again | The username should be saved and appear again | The username was saved and appeared again |
 | Finished section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
+6. Error 404
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Error 404 | Typing in the wrong address | The Error page should appear | The Error page appeared |
+| Error 404 | Clicking the Go To Homepage button | The user should go back to the home page | The user was brought back to the home page |
+
 ---
 
 ## Room for improvement
