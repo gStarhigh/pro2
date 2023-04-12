@@ -13,7 +13,7 @@ When the site is loaded, the class of "hide" is removed from the "welcome-game-a
 Link to the website: [Harry Potter Quiz](https://gstarhigh.github.io/pro2/)
 
 Image of the website on a desktop:
-![Finished website Desktop]
+![Finished website Desktop](/documentation/screenshots/index-ps-desktop.png)
 
 ## Table of Contents
 ---
