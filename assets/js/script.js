@@ -73,7 +73,7 @@ toDiffbutton.addEventListener("click", function (event) {
 
 // Event listeners for the difficulties
 easyButton.addEventListener("click", function () {
-    runGame("easy");
+    runGame(difficulty.easy);
 });
 mediumButton.addEventListener("click", function () {
     runGame("medium");
