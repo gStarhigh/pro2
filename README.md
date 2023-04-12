@@ -313,9 +313,22 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Rules Section | Click the button to proceed | The Difficulty section should appear | The Difficulty section did appear |
 | Rules section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
-3.
+3. Choose a Difficulty Section
 
-4.
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Difficulty Section | Click the Easy button | Display the Easy questions | Displayed the Easy questions |
+| Difficulty Section | Click the Medium button | Display the Medium questions | Displayed the Medium questions |
+| Difficulty Section | Click the Hard button | Display the Hard questions | Displayed the Hard questions |
+| Difficulty section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
+
+4. Game Section
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Section | Click the wrong answer | Timer should stop | Timer stopped |
+| Game Section | Click the wrong answer | The wrong answers should turn Red | The wrong answers  turned Red |
+| Game Section | Click the wrong answer | The correct answer should turn Green | The correct answer turned Green |
 
 5.
 
