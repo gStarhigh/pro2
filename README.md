@@ -95,11 +95,11 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 <details>
 <summary>Wireframe of the website on a desktop</summary>
-<img src="assets/wireframes/welcome-section.JPG">
+<img src="documentation/wireframes/welcome-section.JPG">
 </details>
 <details>
 <summary>Wireframe of the website on a mobile device</summary>
-<img src="assets/wireframes/welcome-phone.JPG">
+<img src="documentation/wireframes/welcome-phone.JPG">
 </details>
 ---
 
