@@ -106,7 +106,6 @@ function startTimer() {
 /**
  * Checks if the timer has reached 0, if not, decrements the remaining time by 1.
  */
-// Timer Countdown
 function countdown() {
     if (timeLeft === 0) {
         stopTimer();
