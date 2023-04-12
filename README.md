@@ -296,6 +296,33 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ---
 
+## Testing User Stories
+
+1. 
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+8.
+
+9.
+
+10.
+---
+
+## Room for improvement
+
+---
+
 ## Commit history
 - The commit history for this website can be found on Github: (https://github.com/gStarhigh/pro2/commits/main)
 
