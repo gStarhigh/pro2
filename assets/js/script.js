@@ -49,16 +49,9 @@ welcomeSection.classList.remove("hide");
 // Eventlisteners
 // When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
 answer1.addEventListener("click", () => checkAnswer("a"));
-
-answer2.addEventListener("click", function () {
-    checkAnswer("b");
-});
-answer3.addEventListener("click", function () {
-    checkAnswer("c");
-});
-answer4.addEventListener("click", function () {
-    checkAnswer("d");
-});
+answer2.addEventListener("click", () => checkAnswer("b"));
+answer3.addEventListener("click", () => checkAnswer("c"));
+answer4.addEventListener("click", () => checkAnswer("d"));
 
 // Listens for a submit event on the username form, but does not perform any action
 usernameForm.addEventListener("submit", function (event) {
