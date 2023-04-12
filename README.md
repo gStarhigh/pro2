@@ -302,15 +302,16 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Welcome section | Enter a username and click the button | Move to the Rules section | Moved to the Rules section |
-|Welcome section | Click the button without a username | Error message should appear to tell the user to enter a username | Error message appeared and told the user to enter a username |
-|Welcome section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
+| Welcome section | Enter a username and click the button | Move to the Rules section | Moved to the Rules section |
+| Welcome section | Click the button without a username | Error message should appear to tell the user to enter a username | Error message appeared and told the user to enter a username |
+| Welcome section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
 2. Rules Section
 
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|  |  |  |  |
+| Rules Section | Click the button to proceed | The Difficulty section should appear | The Difficulty section did appear |
+| Rules section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
 3.
 
