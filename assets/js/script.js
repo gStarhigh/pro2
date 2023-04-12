@@ -48,9 +48,8 @@ welcomeSection.classList.remove("hide");
 
 // Eventlisteners
 // When the user clicks an answer, it checks what button was clicked and uses that information in the checkAnswer function
-answer1.addEventListener("click", function () {
-    checkAnswer("a");
-});
+answer1.addEventListener("click", () => checkAnswer("a"));
+
 answer2.addEventListener("click", function () {
     checkAnswer("b");
 });
