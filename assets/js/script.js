@@ -76,10 +76,10 @@ easyButton.addEventListener("click", function () {
     runGame(difficulty.easy);
 });
 mediumButton.addEventListener("click", function () {
-    runGame("medium");
+    runGame(difficulty.medium);
 });
 hardButton.addEventListener("click", function () {
-    runGame("hard");
+    runGame(difficulty.hard);
 });
 
 // Next question button event listener
