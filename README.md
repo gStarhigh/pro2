@@ -341,8 +341,17 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Game Section | 10 questions have been answered | The finished section should appear | The finished section appeared. |
 | Game section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
-5.
+5. Finished Section
 
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Finished Section | Finished the game | The users username should appear | The users username did appear |
+| Finished Section | Finished the game | The users score should appear | The users score did appear |
+| Finished Section | Finished the game | If the user got 0 correct answer a custom message should appear | The custom message did appear |
+| Finished Section | Finished the game | If the user got 1-4 correct answer a custom message should appear | The custom message did appear |
+| Finished Section | Finished the game | If the user got 5-9 correct answer a custom message should appear | The custom message did appear |
+| Finished Section | Finished the game | If the user got 10 correct answer a custom message should appear | The custom message did appear |
+| Finished section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 6.
 
 7.
