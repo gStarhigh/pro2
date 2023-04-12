@@ -364,7 +364,16 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ---
 
-## Room for improvement
+## Room for improvement or additions
+
+- Possibility to compete both against myself and other players.
+- A highscore scoreboard depending on how fast the user answered all questions.
+- A highscore scoreboard showing the amount of correct answers.
+- A highscore scoreboard combining both how fast and how many correct answers the user got.
+    - For the above to make sense the following should be required to change:
+        - The correct and wrong answers should not appear for the user when they answer a question. 
+        - There should also be more questions for each difficulty.
+        - The answers should be random as to in which answer button they appeared each time.
 
 ---
 
