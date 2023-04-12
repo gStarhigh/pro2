@@ -304,78 +304,78 @@ The wireframes should not be considered finished product, but as a tool I used a
 ### Below is captured screenshots of the website on Desktop:
 <details>
 <summary>Screenshot of Home page</summary>
-<img src="assets/images/index-ps-desktop.png">
+<img src="documentation/screenshots/index-ps-desktop.png">
 </details>
 <details>
 <summary>Screenshot of Rules page</summary>
-<img src="assets/images/rules-ps-desktop.png">
+<img src="documentation/screenshots/rules-ps-desktop.png">
 </details>
 <details>
 <summary>Screenshot of Difficulty page</summary>
-<img src="assets/images/difficulties-ps-desktop.png">
+<img src="documentation/screenshots/difficulties-ps-desktop.png">
 </details>
 <details>
 <summary>Screenshot of Questions page</summary>
-<img src="assets/images/questions-ps-desktop.png">
+<img src="documentation/screenshots/questions-ps-desktop.png">
 </details>
 <details>
 <summary>Screenshot of Questions timedout</summary>
-<img src="assets/images/questions-timeout-ps-desktop.png">
+<img src="documentation/screenshots/questions-timeout-ps-desktop.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 0 correct answers</summary>
-<img src="assets/images/0-correct-answers.png">
+<img src="documentation/screenshots/0-correct-answers.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 1-4 correct answers</summary>
-<img src="assets/images/1-4-correct-answers.png">
+<img src="documentation/screenshots/1-4-correct-answers.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 5-9 correct answers</summary>
-<img src="assets/images/5-9-correct-answers.png">
+<img src="documentation/screenshots/5-9-correct-answers.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 10 correct answers</summary>
-<img src="assets/images/10-correct-answers.png">
+<img src="documentation/screenshots/10-correct-answers.png">
 </details>
 
 
 ### Below is captured screenshots of the website on a phone sized screen:
 <details>
 <summary>Screenshot of Home page</summary>
-<img src="assets/images/index-ps-phone.png">
+<img src="documentation/screenshots/index-ps-phone.png">
 </details>
 <details>
 <summary>Screenshot of Rules page</summary>
-<img src="assets/images/rules-ps-phone.png">
+<img src="documentation/screenshots/rules-ps-phone.png">
 </details>
 <details>
 <summary>Screenshot of Difficulty page</summary>
-<img src="assets/images/difficulties-ps-phone.png">
+<img src="documentation/screenshots/difficulties-ps-phone.png">
 </details>
 <details>
 <summary>Screenshot of Questions page</summary>
-<img src="assets/images/questions-ps-phone.png">
+<img src="documentation/screenshots/questions-ps-phone.png">
 </details>
 <details>
 <summary>Screenshot of Questions timedout</summary>
-<img src="assets/images/questions-timeout-ps-phone.png">
+<img src="documentation/screenshots/questions-timeout-ps-phone.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 0 correct answers</summary>
-<img src="assets/images/0-correct-answers-phone.png">
+<img src="documentation/screenshots/0-correct-answers-phone.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 1-4 correct answers</summary>
-<img src="assets/images/1-4-correct-answers-phone.png">
+<img src="documentation/screenshots/1-4-correct-answers-phone.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 5-9 correct answers</summary>
-<img src="assets/images/5-9-correct-answers-phone.png">
+<img src="documentation/screenshots/5-9-correct-answers-phone.png">
 </details>
 <details>
 <summary>Screenshot of Finished page with 10 correct answers</summary>
-<img src="assets/images/10-correct-answers-phone.png">
+<img src="documentation/screenshots/10-correct-answers-phone.png">
 </details>
 
 ---
