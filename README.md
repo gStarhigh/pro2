@@ -338,6 +338,8 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Game Section | Click the next question arrow | The timer should reset to 15s | The timer did reset to 15s |
 | Game Section | Click the next question arrow | The color of the countdown should not be Red | The color of the countdown was not Red |
 | Game Section | Click the next question arrow | The buttons should not be disabled anymore | The buttons were not disabled |
+| Game Section | 10 questions have been answered | The finished section should appear | The finished section appeared. |
+| Game section | Click the Home icon | The site should take you to the home page | The site took me to the home page |
 
 5.
 
