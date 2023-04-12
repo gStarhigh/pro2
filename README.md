@@ -298,9 +298,13 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ## Testing User Stories
 
-1. 
+1. Welcome section
 
-2.
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+|Welcome section| Enter a username and click the button| Move to the Rules section| Moved to the Rules section|
+|Welcome section| Click the button without a username| Error message should appear to tell the user to enter a username| Error message appeared and told the user to enter a username|
+
 
 3.
 
