@@ -221,7 +221,7 @@ The wireframes should not be considered finished product, but as a tool I used a
         - Line 149: Targets by its ID, "finished-score-text" in the script.js file to present the user with the amount of correct answers they got out of the total amount of questions that were presented.
 <details>
 <summary>Image of the HTML validation</summary>
-<img src="assets/images/html-validation.JPG">
+<img src="documentation/screenshots/html-validation.JPG">
 </details>
 
 ### CSS
@@ -230,11 +230,11 @@ The wireframes should not be considered finished product, but as a tool I used a
     - The W3C Validator shows a warning "Imported style sheets are not checked in direct input and file upload modes" - This means that the validator have checked all CSS code but it cannot check the imported url, in this case it refers to the googlefonts import url. 
 <details>
 <summary>Image of the CSS validation</summary>
-<img src="assets/images/jigsaw-validation.JPG">
+<img src="documentation/screenshots/jigsaw-validation.JPG">
 </details>
 <details>
 <summary>Image of the shown error</summary>
-<img src="assets/images/jigsaw-warning.JPG">
+<img src="documentation/screenshots/jigsaw-warning.JPG">
 </details>
 
 ### JavaScript
@@ -244,14 +244,14 @@ The wireframes should not be considered finished product, but as a tool I used a
     - The Jshint validator shows when questions.js are tested that there are 3 unused variables. This refers to the Lines 1, 83 and 165 in the questions.js file. These variables are defined in another js file, the script.js. This is why this information is presented by jshint.com The variables can be found on line 163, 166 and 169 in the script.js file.
 <details>
 <summary>Image of Jshint validation of the questions.js file</summary>
-<img src="assets/images/jshint-java-questions.JPG">
+<img src="documentation/screenshots/jshint-java-questions.JPG">
 </details>
 
 - Script.js:
     -  The Jshint validator shows when script.js are tested that there are 3 undefined variables. This refers to the lines: 163, 166 and 169 in the questions.js file. These variables are defined in another js file, the question.js. This is why this information is presented by jshint.com. The variables can be found on lines 1, 83 and 165 in the question.js file.
 <details>
 <summary>Image of Jshint validation of the script.js file</summary>
-<img src="assets/images/jshint-java-script.JPG">
+<img src="documentation/screenshots/jshint-java-script.JPG">
 </details>
 
 ---
