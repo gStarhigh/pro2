@@ -329,6 +329,10 @@ The wireframes should not be considered finished product, but as a tool I used a
 | Game Section | Click the wrong answer | Timer should stop | Timer stopped |
 | Game Section | Click the wrong answer | The wrong answers should turn Red | The wrong answers  turned Red |
 | Game Section | Click the wrong answer | The correct answer should turn Green | The correct answer turned Green |
+| Game Section | Click the wrong answer | The score should NOT increment by 1 | The score did NOT incremented by 1 |
+| Game Section | Click the correct answer | The correct answer should turn Green | The correct answer turned Green |
+| Game Section | Click the correct answer | The wrong answers should turn Red | The wrong answers turned Red |
+| Game Section | Click the correct answer | The score should increment by 1 | The score incremented by 1 |
 
 5.
 
