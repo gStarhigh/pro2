@@ -423,4 +423,7 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 - I got help with the readme file from CodeInstitutes samplereadme.
     - Link : (https://github.com/code-institute-solutions/samplereadme)
+
+### Mentor:
+- I want to thank my mentor Jack Wachira on Code Institute for his assistance and suggestions to make my project better.
 ---
