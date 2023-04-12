@@ -25,6 +25,11 @@ const timeLeftText = document.getElementById("actual-time-left");
 const enterUsername = document.getElementById("gamer-tag-info");
 const statusLevel = document.getElementById("status-level");
 const hourglass = document.getElementById("time-left");
+const difficulty = {
+    easy: "easy",
+    medium: "medium",
+    hard: "hard"
+};
 
 // Let variables that can be reassigned
 let currentQuestionIndex; // Keeps track of the index of the current question being asked
