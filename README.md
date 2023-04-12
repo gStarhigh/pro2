@@ -123,7 +123,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     - When the user clicks the "Alohomora" button, an eventlistener in the script.js file removes the "hide" class from the rules section, and adds it to the welcome section, thus displaying the rules section of the index.html file. 
 <details>
 <summary>Screenshot of Home page</summary>
-<img src="assets/images/index-ps-desktop.png">
+<img src="documentation/screenshots/index-ps-desktop.png">
 </details>
 
 ### Rules Section
@@ -136,7 +136,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     - When the user clicks the "Choose difficulty" button, an eventlistener in the script.js file removes the "hide" class from the difficulty section, and adds it to the rules section, thus displaying the question section of the index.html file. 
 <details>
 <summary>Screenshot of Rules page</summary>
-<img src="assets/images/rules-ps-desktop.png">
+<img src="documentation/screenshots/rules-ps-desktop.png">
 </details>
 
 ### Difficulty Section
@@ -148,7 +148,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     - When a difficulty button has been pressed, the hide class gets added to the difficulty section and removes it from the questions section thus displaying the questions.
 <details>
 <summary>Screenshot of Difficulty page</summary>
-<img src="assets/images/difficulties-ps-desktop.png">
+<img src="documentation/screenshots/difficulties-ps-desktop.png">
 </details>
 
 ### Game Section
@@ -164,7 +164,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     - When all 10 questions of the quiz have been asked to the user, the hide class gets added to the questions section and removes it from the finished section thus displaying the finished sections information.
 <details>
 <summary>Screenshot of Questions page</summary>
-<img src="assets/images/questions-ps-desktop.png">
+<img src="documentation/screenshots/questions-ps-desktop.png">
 </details>
 
 ### Finished Section
@@ -180,7 +180,7 @@ The wireframes should not be considered finished product, but as a tool I used a
     The score and the amount of questions asked, are set to 0. The user still has the same username and is not required to enter that again.
 <details>
 <summary>Screenshot of Finished page with 10 correct answers</summary>
-<img src="assets/images/10-correct-answers.png">
+<img src="documentation/screenshots/10-correct-answers.png">
 </details>
 --- 
 
