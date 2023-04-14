@@ -367,7 +367,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ---
 
-## Room for improvement or additions
+## Possible future implementations
 - Possibility to compete both against myself and other players.
 - A highscore scoreboard depending on how fast the user answered all questions.
 - A highscore scoreboard showing the amount of correct answers.
