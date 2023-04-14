@@ -329,9 +329,13 @@ html {
 
 .not-found-section {
     background-color: var(--bgr-clr);
-    width: 40vw;
-    height: 50vh;
     opacity: 0.9;
+    height: 60vh;
+    width: 40vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
 }
 
 /*Media queries for screens under 900px*/
