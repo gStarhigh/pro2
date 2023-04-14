@@ -532,10 +532,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 - I got help with the readme file from CodeInstitutes samplereadme.
     - Link : (https://github.com/code-institute-solutions/samplereadme)
 
-### 404 page:
-- I added an error 404 html page to my project created by Rok Krivec, all credits to Mr. Krivec.
-    - Link: https://colorlib.com/wp/template/colorlib-error-404-4/
-
 ### Mentor:
 - I want to thank my mentor Jack Wachira on Code Institute for his assistance and suggestions to make my project better.
 ---
