@@ -476,6 +476,16 @@ The wireframes should not be considered finished product, but as a tool I used a
 <img src="documentation/screenshots/10-correct-answers-phone.png">
 </details>
 
+## Captured screenshots of the Error 404 page:
+<details>
+<summary>Screenshot of the Error 404 page on a desktop</summary>
+<img src="documentation/screenshots/error-page-desktop.png">
+</details>
+<details>
+<summary>Screenshot of the Error 404 page on a phone</summary>
+<img src="documentation/screenshots/error-page-phone.png">
+</details>
+
 ---
 ## Deployment
 - This website was developed using Gitpod which I used to commit and push to GitHub using the terminal in GitPod. 
