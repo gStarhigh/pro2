@@ -89,6 +89,11 @@ Image of the website on a desktop:
 - Background color for the Game: #444 with 0.9 opacity.
 - Home icon color : (#F5F5F5)
 - Navigation buttons text color: #333
+
+### Error 404 page colors
+- Background color: rgba(220, 224, 217, 0.8);
+- Text color: #5F464B;
+- Error 404 text: #FF101F;
 --- 
 
 ## Typography
