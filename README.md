@@ -97,7 +97,7 @@ Image of the website on a desktop:
 ---
 
 ## Wireframes (Balsamiq)
-I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/assets/wireframes).
+I created the wireframes for this site with Balsamiq. All wireframes can be found in the folder called [Wireframes](https://github.com/gStarhigh/pro2/tree/main/documentation/wireframes).
 The wireframes should not be considered finished product, but as a tool I used as inspiration when creating the Quiz.
 
 <details>
