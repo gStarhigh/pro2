@@ -55,8 +55,7 @@ html {
 
 /*Welcome to the game page*/
 .game {
-    background-color: var(--bgr-clr);
-    opacity: 0.9;
+    background-color: rgba(68, 68, 68, 0.9);
     max-width: 900px;
     min-height: 550px;
     border-radius: 20px;
@@ -187,7 +186,7 @@ html {
 .next-question button {
     font-size: 300%;
     border: none;
-    background-color: var(--bgr-clr);
+    background-color: transparent;
     color: var(--txt-clr);
 }
 
