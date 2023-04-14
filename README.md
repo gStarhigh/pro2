@@ -410,6 +410,10 @@ The wireframes should not be considered finished product, but as a tool I used a
 <img src="documentation/screenshots/index-ps-desktop.png">
 </details>
 <details>
+<summary>Screenshot of Home page with no username</summary>
+<img src="documentation/screenshots/index-ps-nousername-desktop.png">
+</details>
+<details>
 <summary>Screenshot of Rules page</summary>
 <img src="documentation/screenshots/rules-ps-desktop.png">
 </details>
@@ -447,6 +451,9 @@ The wireframes should not be considered finished product, but as a tool I used a
 <details>
 <summary>Screenshot of Home page</summary>
 <img src="documentation/screenshots/index-ps-phone.png">
+</details>
+<summary>Screenshot of Home page with no username</summary>
+<img src="documentation/screenshots/index-ps-nousername-phone.png">
 </details>
 <details>
 <summary>Screenshot of Rules page</summary>
