@@ -231,6 +231,10 @@ The wireframes should not be considered finished product, but as a tool I used a
 <summary>Image of the HTML validation</summary>
 <img src="documentation/screenshots/html-validation.JPG">
 </details>
+<details>
+<summary>Image of the 404 Error page HTML validation</summary>
+<img src="documentation/screenshots/error-page-validation.JPG">
+</details>
 
 ### CSS
 - W3C - CSS Validator: (https://jigsaw.w3.org/css-validator/)
