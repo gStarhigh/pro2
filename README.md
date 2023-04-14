@@ -35,11 +35,12 @@ Image of the website on a desktop:
     
 - ## [Testing](#testing-1)
     - ## [Code Validation](#code-validation-1)
-        - ## [HTML Result](#html-1)
-        - ## [CSS Result](#CSS-1)
-        - ## [JavaScript Result](#javascript-1)
-        - ## [Lighthouse Result](#testing-tools-used-1)
+        - ## [HTML Result](#html)
+        - ## [CSS Result](#css)
+        - ## [JavaScript Result](#javascript)
+        - ## [Lighthouse Result](#testing-tools-used)
     - ## [Testing User Stories](#testing-user-stories-1)
+    - ## [Future improvements](#possible-future-implementations)
 
 - ## [Final Result](#final-result-1)
 
