@@ -340,13 +340,21 @@ html {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.not-found-section h1 {
+.not-found-headline {
     padding-top: 2vh;
     font-size: 3vw;
+    color: #5F464B;
 }
 
-.not-found-section p {
-    padding-top: 5vh;
+.page-not-found {
+    padding-top: 3vh;
+    font-size: 1.5vw;
+    color: #5F464B;
+}
+
+.error-text {
+    padding-top: 2vh;
+    color: #FF101F;
     font-size: 3vw;
 }
 
@@ -355,18 +363,13 @@ html {
 }
 
 .home-404 {
-    font-size: 4vw;
+    font-size: 3vw;
     text-decoration: none;
     font-weight: 900;
-    color: #036D19;
+    color: #5F464B;
     border: solid;
     border-radius: 20px;
     padding: 2px;
-}
-
-.home-404:hover {
-    font-size: 5vw;
-    color: #4357ad;
 }
 
 /*Media queries for screens under 900px*/
