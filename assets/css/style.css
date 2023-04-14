@@ -441,6 +441,12 @@ html {
         flex-direction: row;
         top: 90%;
     }
+
+    /*Error 404 page*/
+    .not-found-section {
+        height: 40vh;
+        width: 40vw;
+    }
 }
 
 /*Media queries for screens under 900px*/
