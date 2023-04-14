@@ -353,13 +353,13 @@ html {
 }
 
 .error-text {
-    padding-top: 2vh;
+    padding-top: 4vh;
     color: #FF101F;
     font-size: 3vw;
 }
 
 .return-home {
-    margin-top: 5.5vh;
+    margin-top: 10vh;
 }
 
 .home-404 {
