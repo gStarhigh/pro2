@@ -327,7 +327,12 @@ html {
 
 /*Error 404 page*/
 
-.not-found-section {}
+.not-found-section {
+    background-color: var(--bgr-clr);
+    width: 40vw;
+    height: 50vh;
+    opacity: 0.9;
+}
 
 /*Media queries for screens under 900px*/
 @media only screen and (max-width: 900px) {
