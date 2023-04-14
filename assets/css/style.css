@@ -328,7 +328,7 @@ html {
 /*Error 404 page*/
 
 .not-found-section {
-    background-color: var(--bgr-clr);
+    background: rgba(220, 224, 217, 0.8);
     opacity: 0.9;
     height: 60vh;
     width: 40vw;
@@ -340,13 +340,24 @@ html {
     -webkit-transform: translate(-50%, -50%);
 }
 
-.not-found-section h1,
-.return-home {
+.not-found-section h1 {
     padding-top: 10vh;
 }
 
 .not-found-section p {
     padding-top: 5vh;
+    font-size: 1.5rem;
+}
+
+.return-home {
+    margin-top: 10vh;
+}
+
+.home-404 {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 900;
+    color: #036D19;
 }
 
 /*Media queries for screens under 900px*/
