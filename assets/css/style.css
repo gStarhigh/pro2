@@ -476,4 +476,9 @@ html {
     .play-again {
         top: 80%;
     }
+
+    /*Error 404 page*/
+    .not-found-section {
+        height: 30vh;
+    }
 }
