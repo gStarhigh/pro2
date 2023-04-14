@@ -41,6 +41,7 @@ Image of the website on a desktop:
         - ## [Lighthouse Result](#testing-tools-used)
     - ## [Testing User Stories](#testing-user-stories-1)
     - ## [Future improvements](#possible-future-implementations)
+- ## [Bugs](#bugs-and-fixes)
 
 - ## [Final Result](#final-result-1)
 
