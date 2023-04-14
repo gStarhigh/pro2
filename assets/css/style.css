@@ -328,8 +328,7 @@ html {
 /*Error 404 page*/
 
 .not-found-section {
-    background: rgba(220, 224, 217, 0.9);
-    opacity: 0.9;
+    background: rgba(220, 224, 217, 0.8);
     height: 60vh;
     width: 40vw;
     position: absolute;
