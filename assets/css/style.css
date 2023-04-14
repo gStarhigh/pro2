@@ -333,9 +333,20 @@ html {
     height: 60vh;
     width: 40vw;
     position: absolute;
+    border-radius: 20px;
+    text-align: center;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
+}
+
+.not-found-section h1,
+.return-home {
+    padding-top: 10vh;
+}
+
+.not-found-section p {
+    padding-top: 5vh;
 }
 
 /*Media queries for screens under 900px*/
