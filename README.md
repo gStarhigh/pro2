@@ -34,6 +34,8 @@ Image of the website on a desktop:
  - ## [General features](#general-features-1)
     
 - ## [Testing](#testing-1)
+    - ## [Code Validation](#code-validation-1)
+    - ## [Testing User Stories](#testing-user-stories-1)
 
 - ## [Final Result](#final-result-1)
 
@@ -297,7 +299,6 @@ The wireframes should not be considered finished product, but as a tool I used a
 ---
 
 ## Testing User Stories
-
 1. Welcome Section
 
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
@@ -367,7 +368,6 @@ The wireframes should not be considered finished product, but as a tool I used a
 ---
 
 ## Room for improvement or additions
-
 - Possibility to compete both against myself and other players.
 - A highscore scoreboard depending on how fast the user answered all questions.
 - A highscore scoreboard showing the amount of correct answers.
