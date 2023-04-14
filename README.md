@@ -452,6 +452,7 @@ The wireframes should not be considered finished product, but as a tool I used a
 <summary>Screenshot of Home page</summary>
 <img src="documentation/screenshots/index-ps-phone.png">
 </details>
+<details>
 <summary>Screenshot of Home page with no username</summary>
 <img src="documentation/screenshots/index-ps-nousername-phone.png">
 </details>
