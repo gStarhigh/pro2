@@ -379,6 +379,11 @@ The wireframes should not be considered finished product, but as a tool I used a
 
 ---
 
+## Bugs and fixes
+
+- Had a bug where the second last entered username would appear when the user had finished the game. This happened when I tried to save the username to the localstorage with a time and date stamp and then get that when the user had finished the game. I could not get it to work and reverted to a simpler way and saved the username to the localstorage without the time and date stamp. This solved the bug and it now works as expected.
+---
+
 ## Commit history
 - The commit history for this website can be found on Github: (https://github.com/gStarhigh/pro2/commits/main)
 
