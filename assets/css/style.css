@@ -471,7 +471,7 @@ html {
     }
 }
 
-/*Media queries for screens under 900px*/
+/*Media queries for screens under 400px*/
 @media only screen and (max-width: 400px) {
 
     .rules-list {
